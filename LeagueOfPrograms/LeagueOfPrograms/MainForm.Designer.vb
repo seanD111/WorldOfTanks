@@ -24,7 +24,7 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ping = New System.Windows.Forms.Label()
-        Me.tmrPing = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'ping
@@ -36,10 +36,10 @@ Partial Class MainForm
         Me.ping.TabIndex = 0
         Me.ping.Text = "Ping: "
         '
-        'tmrPing
+        'Timer1
         '
-        Me.tmrPing.Enabled = True
-        Me.tmrPing.Interval = 10000
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 10000
         '
         'MainForm
         '
@@ -48,12 +48,12 @@ Partial Class MainForm
         Me.ClientSize = New System.Drawing.Size(284, 262)
         Me.Controls.Add(Me.ping)
         Me.Name = "MainForm"
-        Me.Text = "League of Programs"
+        Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents ping As System.Windows.Forms.Label
-    Friend WithEvents tmrPing As System.Windows.Forms.Timer
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class

@@ -5,7 +5,7 @@ Public Class MainForm
 
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrPing.Tick
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Dim pingSender As New Ping()
 
         Dim reply As PingReply = pingSender.Send("216.52.241.254", 1000)
@@ -21,6 +21,6 @@ Public Class MainForm
         Else : ping.Text = "Ping: " & reply.RoundtripTime
         End If
     End Sub
-    'yeusuusus
+    'asdfasdfasdfasdf
 End Class
 
