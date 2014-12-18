@@ -42,9 +42,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
 # suo stuff
-LeagueOfPrograms/.sln
 LeagueOfPrograms/.suo
+
 # binaries
 LeagueOfPrograms/bin/
 LeagueOfPrograms/obj/
