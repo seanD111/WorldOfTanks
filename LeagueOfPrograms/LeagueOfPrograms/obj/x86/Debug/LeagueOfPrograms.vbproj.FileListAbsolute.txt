@@ -32,6 +32,6 @@ D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPr
 D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.pdb
 D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.xml
 D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.MainUI.resources
-D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.Splash.resources
 D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.Resources.resources
 D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.vbproj.GenerateResource.Cache
+D:\Downloads\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.SplashUI.resources

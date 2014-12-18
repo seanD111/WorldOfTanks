@@ -1,13 +1,6 @@
 ﻿Imports System.Net.NetworkInformation
 Public NotInheritable Class MainUI
 
-    Private Sub AboutBox1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub OKButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Close()
-    End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Dim pingSender As New Ping()
@@ -24,5 +17,9 @@ Public NotInheritable Class MainUI
             lblping.Text = "Ping: Checking..."
         Else : lblping.Text = "Ping: " & reply.RoundtripTime
         End If
+    End Sub
+
+    Private Sub MainUI_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
+        SplashUI.Close()
     End Sub
 End Class
