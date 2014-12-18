@@ -81,4 +81,23 @@ Public NotInheritable Class MainUI
     Private Sub imgBackground_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles imgBackground.MouseUp
         drag = False
     End Sub
+
+ 
+    Private Sub PictureBox4_MouseClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles PictureBox4.MouseClick
+        PictureBox4.BackgroundImage = My.Resources.pressedbutton
+        lblComingSoon1.Image = My.Resources.pressedbutton
+
+    End Sub
+
+
+    Private Sub lblComingSoon1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblComingSoon1.MouseClick
+        PictureBox4.BackgroundImage = My.Resources.pressedbutton
+        lblComingSoon1.Image = My.Resources.pressedbutton
+    End Sub
+
+    Private Sub PictureBox4_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox4.MouseClick
+
+    End Sub
+
+
 End Class
