@@ -44,8 +44,10 @@ Temporary Items
 
 
 # suo stuff
-LeagueOfPrograms/LeagueOfPrograms/.suo
+*.suo
 
 # binaries
 LeagueOfPrograms/LeagueOfPrograms/bin/**/
 LeagueOfPrograms/LeagueOfPrograms/obj/**/
+*.exe
+*.pdb
