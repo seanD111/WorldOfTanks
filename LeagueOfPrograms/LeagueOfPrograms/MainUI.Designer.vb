@@ -235,7 +235,7 @@ Partial Class MainUI
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainUI"
         Me.Padding = New System.Windows.Forms.Padding(9)
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AboutBox1"
         CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).EndInit()
