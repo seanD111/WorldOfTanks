@@ -10,15 +10,15 @@ Public Class MainForm
 
         Dim reply As PingReply = pingSender.Send("50.203.115.149", 1000)
 
-        ping.Text = "Ping: " & reply.RoundtripTime
+        lblping.Text = "Ping: " & reply.RoundtripTime
         If reply.RoundtripTime > 200 Then
-            ping.ForeColor = Color.Red
-        Else : ping.ForeColor = Color.Green
+            lblping.ForeColor = Color.Red
+        Else : lblping.ForeColor = Color.Green
         End If
 
         If reply.RoundtripTime = 0 Then
-            ping.Text = "Ping: Checking..."
-        Else : ping.Text = "Ping: " & reply.RoundtripTime
+            lblping.Text = "Ping: Checking..."
+        Else : lblping.Text = "Ping: " & reply.RoundtripTime
         End If
     End Sub
     'im unreal

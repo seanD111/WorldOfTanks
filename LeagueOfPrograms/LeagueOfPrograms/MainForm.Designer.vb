@@ -23,18 +23,18 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.ping = New System.Windows.Forms.Label()
+        Me.lblping = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
-        'ping
+        'lblping
         '
-        Me.ping.AutoSize = True
-        Me.ping.Location = New System.Drawing.Point(12, 9)
-        Me.ping.Name = "ping"
-        Me.ping.Size = New System.Drawing.Size(34, 13)
-        Me.ping.TabIndex = 0
-        Me.ping.Text = "Ping: "
+        Me.lblping.AutoSize = True
+        Me.lblping.Location = New System.Drawing.Point(12, 9)
+        Me.lblping.Name = "lblping"
+        Me.lblping.Size = New System.Drawing.Size(34, 13)
+        Me.lblping.TabIndex = 0
+        Me.lblping.Text = "Ping: "
         '
         'Timer1
         '
@@ -46,14 +46,14 @@ Partial Class MainForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.ping)
+        Me.Controls.Add(Me.lblping)
         Me.Name = "MainForm"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ping As System.Windows.Forms.Label
+    Friend WithEvents lblping As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
