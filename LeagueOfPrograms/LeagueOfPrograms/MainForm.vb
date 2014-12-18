@@ -5,7 +5,7 @@ Public Class MainForm
 
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrPing.Tick
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Dim pingSender As New Ping()
 
         Dim reply As PingReply = pingSender.Send("216.52.241.254", 1000)
@@ -15,10 +15,12 @@ Public Class MainForm
             ping.ForeColor = Color.Red
         Else : ping.ForeColor = Color.Green
         End If
-        'rob isnt bad i guess
+
         If reply.RoundtripTime = 0 Then
             ping.Text = "Ping: Checking..."
         Else : ping.Text = "Ping: " & reply.RoundtripTime
         End If
     End Sub
+    'asdfasdfasdfasdf
 End Class
+

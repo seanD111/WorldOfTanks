@@ -7,6 +7,6 @@ C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPro
 C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.exe
 C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.xml
 C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.pdb
-C:\Users\Sean\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.exe
-C:\Users\Sean\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.xml
-C:\Users\Sean\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.pdb
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.exe
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.xml
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.pdb
