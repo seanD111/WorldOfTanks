@@ -19,3 +19,9 @@ C:\Users\Sean\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\bi
 C:\Users\Sean\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.MainForm.resources
 C:\Users\Sean\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.Resources.resources
 C:\Users\Sean\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.vbproj.GenerateResource.Cache
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.exe
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.pdb
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.xml
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.MainForm.resources
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.Resources.resources
+C:\Users\home\Documents\GitHub\WorldOfTanks\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.vbproj.GenerateResource.Cache
