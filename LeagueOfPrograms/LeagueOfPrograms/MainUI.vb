@@ -2,7 +2,7 @@
 Public NotInheritable Class MainUI
 
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timerPing.Tick
         Dim pingSender As New Ping()
 
         Dim reply As PingReply = pingSender.Send("50.203.115.149", 1000)
@@ -21,5 +21,14 @@ Public NotInheritable Class MainUI
 
     Private Sub MainUI_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
         SplashUI.Close()
+    End Sub
+
+    Private Sub PictureBox15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgExitButton.Click
+        Me.Close()
+        SplashUI.Close()
+    End Sub
+
+    Private Sub lblping_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblping.Click
+
     End Sub
 End Class
