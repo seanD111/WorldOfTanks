@@ -21,6 +21,6 @@ Public Class MainForm
         Else : ping.Text = "Ping: " & reply.RoundtripTime
         End If
     End Sub
-    'asdfasdfasdfasdf
+    'im unreal
 End Class
 
