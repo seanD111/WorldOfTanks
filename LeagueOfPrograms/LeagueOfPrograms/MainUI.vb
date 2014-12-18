@@ -1,8 +1,12 @@
 ﻿Imports System.Net.NetworkInformation
-Public Class MainForm
+Public NotInheritable Class MainUI
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub AboutBox1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub OKButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Me.Close()
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -21,6 +25,4 @@ Public Class MainForm
         Else : lblping.Text = "Ping: " & reply.RoundtripTime
         End If
     End Sub
-    'im unreal
 End Class
-

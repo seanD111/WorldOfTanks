@@ -72,11 +72,17 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.vb">
+    <Compile Include="MainUI.Designer.vb">
+      <DependentUpon>MainUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.vb">
-      <DependentUpon>MainForm.vb</DependentUpon>
+    <Compile Include="SplashUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashUI.Designer.vb">
+      <DependentUpon>SplashUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +102,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.vb</DependentUpon>
+    <EmbeddedResource Include="MainUI.resx">
+      <DependentUpon>MainUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashUI.resx">
+      <DependentUpon>SplashUI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -116,6 +125,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light launch.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark launch.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
