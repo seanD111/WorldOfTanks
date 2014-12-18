@@ -1,0 +1,9 @@
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.MainForm.resources
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.Resources.resources
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.vbproj.GenerateResource.Cache
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.exe
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.pdb
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\bin\Debug\LeagueOfPrograms.xml
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.exe
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.xml
+C:\Users\Sean\documents\visual studio 2010\Projects\LeagueOfPrograms\LeagueOfPrograms\obj\x86\Debug\LeagueOfPrograms.pdb
