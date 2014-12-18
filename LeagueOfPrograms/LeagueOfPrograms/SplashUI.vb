@@ -22,6 +22,8 @@
 
     Private Sub imgMinimizeSplash_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgMinimizeSplash.Click
         Me.Hide()
+
+        'this needs to be fixed
     End Sub
 End Class
 

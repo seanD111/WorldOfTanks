@@ -233,11 +233,8 @@ Partial Class MainUI
         Me.Controls.Add(Me.imgTopBar)
         Me.Controls.Add(Me.imgBackground)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "MainUI"
         Me.Padding = New System.Windows.Forms.Padding(9)
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AboutBox1"
         CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).EndInit()
