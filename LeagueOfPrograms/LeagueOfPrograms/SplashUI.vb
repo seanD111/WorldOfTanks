@@ -1,4 +1,6 @@
-﻿Public Class SplashUI
+﻿
+Public Class SplashUI
+
     Dim drag As Boolean
     Dim mousex As Integer
     Dim mousey As Integer
@@ -64,5 +66,15 @@
     End Sub
 
 
+
+    Private Sub timerBGCheck_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timerBGCheck.Tick
+        If RadioButton1.Checked = True Then
+            imgSplash.BackgroundImage = My.Resources.wallpaper1
+            imgSplash.BackgroundImageLayout = ImageLayout.Center
+        Else
+            imgSplash.BackgroundImage = My.Resources.wallpaper2
+            imgSplash.BackgroundImageLayout = ImageLayout.Stretch
+        End If
+    End Sub
 End Class
 

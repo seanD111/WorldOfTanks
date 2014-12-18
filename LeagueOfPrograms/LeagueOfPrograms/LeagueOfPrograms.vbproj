@@ -154,6 +154,8 @@
   <ItemGroup>
     <Content Include="league_of_legends_dock_icon_v2_by_kaldrax-d53pwe8.ico" />
     <Content Include="league_of_legends_icon_by_theman4556-d6wic5y.ico" />
+    <None Include="Resources\cs_bg_champions.png" />
+    <None Include="Resources\wallpaper-1382048.jpg" />
     <None Include="Resources\pressedbutton.png" />
     <None Include="Resources\shopbutton.png" />
   </ItemGroup>
