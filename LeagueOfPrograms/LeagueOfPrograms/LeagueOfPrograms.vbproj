@@ -48,6 +48,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>league_of_legends_dock_icon_v2_by_kaldrax-d53pwe8.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -131,6 +134,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dark launch.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="league_of_legends_dock_icon_v2_by_kaldrax-d53pwe8.ico" />
+    <Content Include="league_of_legends_icon_by_theman4556-d6wic5y.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
