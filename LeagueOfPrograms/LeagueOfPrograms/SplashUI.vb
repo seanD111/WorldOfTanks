@@ -14,6 +14,7 @@
     End Sub
 
     Private Sub imgLaunchButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgLaunchButton.Click
+        imgLaunchButton.BackgroundImage = My.Resources.light_launch
         MainUI.Show()
         Me.Hide()
     End Sub
