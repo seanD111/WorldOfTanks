@@ -1,4 +1,5 @@
 ﻿Public Class leagueEntry
+    Inherits dataFromAPI
     Private playerOrTeamId As String
     Private playerOrTeamName As String
     Private division As String

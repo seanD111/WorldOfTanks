@@ -1,14 +1,15 @@
 ﻿Public Class summoner
-    Public id As Long
-    Public name As String
-    Public profileIconId As Integer
-    Public summonerLevel As Long
-    Public revisionDate As Long
-    Public masterySet As masteryPage()
-    Public runeSet As runePage()
-    Public leagues As league()
-    Public highestRank As String
-    Public stats As modeStats()
+    Inherits dataFromAPI
+    Private id As Long
+    Private name As String
+    Private profileIconId As Integer
+    Private summonerLevel As Long
+    Private revisionDate As Long
+    Private masterySet As masteryPage()
+    Private runeSet As runePage()
+    Private leagues As league()
+    Private highestRank As String
+    Private stats As modeStats()
 
 
 End Class

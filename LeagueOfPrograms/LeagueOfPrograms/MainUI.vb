@@ -1,7 +1,4 @@
 ﻿Imports System.Net.NetworkInformation
-Imports Newtonsoft.Json
-Imports Newtonsoft.Json.Linq
-
 Public NotInheritable Class MainUI
 
     Dim drag As Boolean
@@ -33,7 +30,7 @@ Public NotInheritable Class MainUI
         SplashUI.Close()
     End Sub
 
-
+   
     Private Sub imgTopBar_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles imgTopBar.MouseDown
         drag = True
         mousex = Windows.Forms.Cursor.Position.X - Me.Left
@@ -85,7 +82,7 @@ Public NotInheritable Class MainUI
         drag = False
     End Sub
 
-
+ 
     Private Sub PictureBox4_MouseClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles PictureBox4.MouseClick
         PictureBox4.BackgroundImage = My.Resources.pressedbutton
         lblComingSoon1.Image = My.Resources.pressedbutton
@@ -103,13 +100,12 @@ Public NotInheritable Class MainUI
     End Sub
 
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
-    Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles Label1.Click
-        Dim data As New summonerAPI
-        Dim summoner As JObject = data.Parse(data.getJSON("Stole His Wife"))
-        Label1.Text = summoner.Item("stolehiswife").Item("name")
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim data As New dataFromAPI
+        Label1.Text = data.Parse("{""ticker"":{""high"":5.31,""low"":4.23,""success"":true}}")
     End Sub
 End Class

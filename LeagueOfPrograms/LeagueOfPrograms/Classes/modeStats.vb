@@ -1,4 +1,5 @@
 ﻿Public Class modeStats
+    Inherits dataFromAPI
     Private playerStatSummaryType As String
     Private wins As Integer
     Private losses As Integer
