@@ -91,6 +91,8 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="league.vb" />
+    <Compile Include="leagueEntry.vb" />
     <Compile Include="MainUI.Designer.vb">
       <DependentUpon>MainUI.vb</DependentUpon>
     </Compile>

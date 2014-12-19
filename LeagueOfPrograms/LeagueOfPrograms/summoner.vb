@@ -7,4 +7,7 @@
     Dim revisionDate As Long
     Dim masterySet As masteryPage()
     Dim runeSet As runePage()
+    Dim leagues As league()
+    Dim highestRank As String
+
 End Class
