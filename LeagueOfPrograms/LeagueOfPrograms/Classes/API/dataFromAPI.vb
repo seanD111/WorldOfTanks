@@ -7,6 +7,7 @@ Public Class dataFromAPI
         ReDim keys(3)
         keys(0) = "e5547c49-b045-4e3b-a486-63d69fefacdf"
         keys(1) = "ce57ec7f-3d6f-4481-89bc-c83e3310ab7d"
+        keys(2) = "a98f0029-9ce3-496e-b2ad-8f351ffe6678"
     End Sub
 
     Public Overridable Function JSONtoData()
