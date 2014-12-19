@@ -6,6 +6,7 @@ Public Class dataFromAPI
     Sub New()
         ReDim keys(3)
         keys(0) = "e5547c49-b045-4e3b-a486-63d69fefacdf"
+        keys(1) = "ce57ec7f-3d6f-4481-89bc-c83e3310ab7d"
     End Sub
 
     Public Overridable Sub JSONtoObject()
