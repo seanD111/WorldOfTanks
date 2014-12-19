@@ -9,15 +9,11 @@ Public Class dataFromAPI
         keys(1) = "ce57ec7f-3d6f-4481-89bc-c83e3310ab7d"
     End Sub
 
-    Public Function Parse(ByVal str As String)
-        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(str)
-        Return data.ticker.high
+    Public Overridable Function JSONtoData()
+
     End Function
 
-    Public Overridable Sub JSONtoObject()
-    End Sub
-    Public Overridable Sub ObjectToData()
-    End Sub
+
 
 End Class
 
@@ -30,10 +26,10 @@ Public Class masteryAPI
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Sub
-    Overrides Sub JSONtoObject()
+    Public Overrides Function JSONtoData()
         Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
+        Return data.ticker.high
+    End Function
 End Class
 
 Public Class summonerAPI
@@ -44,12 +40,10 @@ Public Class summonerAPI
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Sub
-    Overrides Sub JSONtoObject()
-
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
+    Public Overrides Function JSONtoData()
         Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
+        Return data.ticker.high
+    End Function
 End Class
 
 
@@ -61,12 +55,10 @@ Public Class runeAPI
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Sub
 
-    Overrides Sub JSONtoObject()
-
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
+    Public Overrides Function JSONtoData()
         Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
+        Return data.ticker.high
+    End Function
 End Class
 
 Public Class statsAPI
@@ -76,12 +68,10 @@ Public Class statsAPI
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Sub
-    Overrides Sub JSONtoObject()
-
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
+    Public Overrides Function JSONtoData()
         Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
+        Return data.ticker.high
+    End Function
 End Class
 Public Class leagueAPI
     Inherits dataFromAPI
@@ -90,12 +80,19 @@ Public Class leagueAPI
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Sub
-    Overrides Sub JSONtoObject()
-
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
+    Public Overrides Function JSONtoData()
         Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
+        Return data.ticker.high
+    End Function
 
-    End Sub
+
+
+    'Overrides Sub JSONtoObject()
+
+    'Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
+    'Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
+    '
+    '    End Sub
 End Class
 
 
