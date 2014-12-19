@@ -1,5 +1,6 @@
 ﻿Public Class mastery
-    Dim id As Integer
-    Dim rank As Integer
+    Inherits dataFromAPI
+    Private id As Integer
+    Private rank As Integer
 
 End Class

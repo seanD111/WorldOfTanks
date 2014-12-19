@@ -1,4 +1,5 @@
 ﻿Public Class rune
-    Dim runeSlotId As Integer
-    Dim runeId As Integer
+    Inherits dataFromAPI
+    Private runeSlotId As Integer
+    Private runeId As Integer
 End Class

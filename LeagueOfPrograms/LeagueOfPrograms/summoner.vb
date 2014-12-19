@@ -1,13 +1,15 @@
 ﻿Public Class summoner
+    Inherits dataFromAPI
+    Private id As Long
+    Private name As String
+    Private profileIconId As Integer
+    Private summonerLevel As Long
+    Private revisionDate As Long
+    Private masterySet As masteryPage()
+    Private runeSet As runePage()
+    Private leagues As league()
+    Private highestRank As String
+    Private stats As modeStats()
 
-    Dim id As Long
-    Dim name As String
-    Dim profileIconId As Integer
-    Dim summonerLevel As Long
-    Dim revisionDate As Long
-    Dim masterySet As masteryPage()
-    Dim runeSet As runePage()
-    Dim leagues As league()
-    Dim highestRank As String
 
 End Class

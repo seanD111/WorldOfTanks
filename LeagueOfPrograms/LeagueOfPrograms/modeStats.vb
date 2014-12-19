@@ -1,0 +1,40 @@
+﻿Public Class modeStats
+    Inherits dataFromAPI
+    Private playerStatSummaryType As String
+    Private wins As Integer
+    Private losses As Integer
+    Private botGamesPlayed As Integer
+    Private killingSpree As Integer
+    Private maxChampionsKilled As Integer
+    Private maxLargestCriticalStrike As Integer
+    Private maxLargestKillingSpree As Integer
+    Private maxNumDeaths As Integer
+    Private maxTimePlayed As Integer
+    Private maxTimeSpentLiving As Integer
+    Private mostChampionKillsPerSession As Integer
+    Private mostSpellsCast As Integer
+    Private normalGamesPlayed As Integer
+    Private rankedPremadeGamesPlayed As Integer
+    Private rankedSoloGamesPlayed As Integer
+    Private totalAssists As Integer
+    Private totalChampionKills As Integer
+    Private totalDamageDealt As Integer
+    Private totalDamageTaken As Integer
+    Private totalDeathsPerSession As Integer
+    Private totalDoubleKills As Integer
+    Private totalFirstBlood As Integer
+    Private totalGoldEarned As Integer
+    Private totalHeal As Integer
+    Private totalMagicDamageDealt As Integer
+    Private totalMinionKills As Integer
+    Private totalNeutralMinionsKilled As Integer
+    Private totalPentaKills As Integer
+    Private totalPhysicalDamageDealt As Integer
+    Private totalQuadraKills As Integer
+    Private totalSessionsLost As Integer
+    Private totalSessionsPlayed As Integer
+    Private totalSessionsWon As Integer
+    Private totalTripleKills As Integer
+    Private totalTurretsKilled As Integer
+    Private totalUnrealKills As Integer
+End Class

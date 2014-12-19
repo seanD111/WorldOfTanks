@@ -1,6 +1,7 @@
 ﻿Public Class masteryPage
-    Dim id As Long
-    Dim name As String
-    Dim current As Boolean
-    Dim masteries As mastery()
+    Inherits dataFromAPI
+    Private id As Long
+    Private name As String
+    Private current As Boolean
+    Private masteries As mastery()
 End Class

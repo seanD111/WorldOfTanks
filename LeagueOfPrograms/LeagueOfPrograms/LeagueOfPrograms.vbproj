@@ -91,6 +91,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dataFromAPI.vb" />
     <Compile Include="league.vb" />
     <Compile Include="leagueEntry.vb" />
     <Compile Include="MainUI.Designer.vb">
@@ -101,6 +102,7 @@
     </Compile>
     <Compile Include="mastery.vb" />
     <Compile Include="masteryPage.vb" />
+    <Compile Include="modeStats.vb" />
     <Compile Include="rune.vb" />
     <Compile Include="runePage.vb" />
     <Compile Include="SplashUI.vb">
