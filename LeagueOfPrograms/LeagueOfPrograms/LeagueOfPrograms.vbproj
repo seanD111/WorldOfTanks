@@ -97,6 +97,10 @@
     <Compile Include="MainUI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mastery.vb" />
+    <Compile Include="masteryPage.vb" />
+    <Compile Include="rune.vb" />
+    <Compile Include="runePage.vb" />
     <Compile Include="SplashUI.vb">
       <SubType>Form</SubType>
     </Compile>
