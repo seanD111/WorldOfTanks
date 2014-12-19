@@ -1,4 +1,4 @@
-﻿Imports System.Web.Script.Serialization
+﻿Imports Newtonsoft.Json
 Public Class dataFromAPI
     Protected Shared keys As String()
     Protected URL As String
@@ -8,6 +8,11 @@ Public Class dataFromAPI
         keys(0) = "e5547c49-b045-4e3b-a486-63d69fefacdf"
         keys(1) = "ce57ec7f-3d6f-4481-89bc-c83e3310ab7d"
     End Sub
+
+    Public Function Parse(ByVal str As String)
+        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(str)
+        Return data.ticker.high
+    End Function
 
     Public Overridable Sub JSONtoObject()
     End Sub
@@ -26,9 +31,7 @@ Public Class masteryAPI
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Sub
     Overrides Sub JSONtoObject()
-
-        Dim JsonConvert As New JavaScriptSerializer
-        Dim data As wrapper = JsonConvert.Deserialize(Of wrapper)(json)
+        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
 
     End Sub
 End Class
@@ -44,8 +47,7 @@ Public Class summonerAPI
     Overrides Sub JSONtoObject()
 
         Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim JsonConvert As New JavaScriptSerializer
-        Dim data As wrapper = JsonConvert.Deserialize(Of wrapper)(json)
+        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
 
     End Sub
 End Class
@@ -62,8 +64,7 @@ Public Class runeAPI
     Overrides Sub JSONtoObject()
 
         Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim JsonConvert As New JavaScriptSerializer
-        Dim data As wrapper = JsonConvert.Deserialize(Of wrapper)(json)
+        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
 
     End Sub
 End Class
@@ -78,8 +79,7 @@ Public Class statsAPI
     Overrides Sub JSONtoObject()
 
         Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim JsonConvert As New JavaScriptSerializer
-        Dim data As wrapper = JsonConvert.Deserialize(Of wrapper)(json)
+        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
 
     End Sub
 End Class
@@ -93,8 +93,7 @@ Public Class leagueAPI
     Overrides Sub JSONtoObject()
 
         Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim JsonConvert As New JavaScriptSerializer
-        Dim data As wrapper = JsonConvert.Deserialize(Of wrapper)(json)
+        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
 
     End Sub
 End Class

@@ -105,8 +105,7 @@ Public NotInheritable Class MainUI
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-
-
+        Dim data As New dataFromAPI
+        Label1.Text = data.Parse("{""ticker"":{""high"":5.31,""low"":4.23,""success"":true}}")
     End Sub
 End Class
