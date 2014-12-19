@@ -52,7 +52,6 @@ Partial Class MainUI
         Me.imgBottomBar = New System.Windows.Forms.PictureBox()
         Me.imgTopBar = New System.Windows.Forms.PictureBox()
         Me.imgBackground = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgGreenButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -364,23 +363,14 @@ Partial Class MainUI
         Me.imgBackground.TabIndex = 2
         Me.imgBackground.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(354, 206)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(354, 239)
+        Me.Label1.Location = New System.Drawing.Point(452, 275)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
-        Me.Label1.TabIndex = 28
+        Me.Label1.TabIndex = 27
         Me.Label1.Text = "Label1"
         '
         'MainUI
@@ -390,7 +380,6 @@ Partial Class MainUI
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1280, 695)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblComingSoon10)
         Me.Controls.Add(Me.lblComingSoon9)
         Me.Controls.Add(Me.lblComingSoon8)
@@ -468,7 +457,6 @@ Partial Class MainUI
     Friend WithEvents lblComingSoon8 As System.Windows.Forms.Label
     Friend WithEvents lblComingSoon9 As System.Windows.Forms.Label
     Friend WithEvents lblComingSoon10 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
