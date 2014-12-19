@@ -85,7 +85,7 @@ End Class
 Public Class leagueAPI
     Inherits dataFromAPI
     Public Sub getJSON(ByVal summonerID As Long)
-        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(0)
+        URL = "https://na.api.pvp.net/api/lol/na/v2.5/league/by-summoner/" & summonerID & "/entry?api_key=" & keys(0)
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Sub
