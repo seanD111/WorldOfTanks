@@ -32,11 +32,18 @@ Partial Class SplashUI
         Me.imgLaunchButton = New System.Windows.Forms.PictureBox()
         Me.imgSplash = New System.Windows.Forms.PictureBox()
         Me.imgBannerSplash = New System.Windows.Forms.PictureBox()
+        Me.imgBottomBar = New System.Windows.Forms.PictureBox()
+        Me.imgLeftSideBar = New System.Windows.Forms.PictureBox()
+        Me.imgRightSide = New System.Windows.Forms.PictureBox()
+        Me.lblVersion = New System.Windows.Forms.Label()
         CType(Me.imgMinimizeSplash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgCloseSplash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgLaunchButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgSplash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBannerSplash, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgLeftSideBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgRightSide, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RadioButton1
@@ -120,11 +127,54 @@ Partial Class SplashUI
         Me.imgBannerSplash.TabIndex = 0
         Me.imgBannerSplash.TabStop = False
         '
+        'imgBottomBar
+        '
+        Me.imgBottomBar.BackgroundImage = CType(resources.GetObject("imgBottomBar.BackgroundImage"), System.Drawing.Image)
+        Me.imgBottomBar.Location = New System.Drawing.Point(0, 667)
+        Me.imgBottomBar.Name = "imgBottomBar"
+        Me.imgBottomBar.Size = New System.Drawing.Size(1277, 25)
+        Me.imgBottomBar.TabIndex = 7
+        Me.imgBottomBar.TabStop = False
+        '
+        'imgLeftSideBar
+        '
+        Me.imgLeftSideBar.BackgroundImage = CType(resources.GetObject("imgLeftSideBar.BackgroundImage"), System.Drawing.Image)
+        Me.imgLeftSideBar.Location = New System.Drawing.Point(0, 67)
+        Me.imgLeftSideBar.Name = "imgLeftSideBar"
+        Me.imgLeftSideBar.Size = New System.Drawing.Size(10, 625)
+        Me.imgLeftSideBar.TabIndex = 8
+        Me.imgLeftSideBar.TabStop = False
+        '
+        'imgRightSide
+        '
+        Me.imgRightSide.BackgroundImage = CType(resources.GetObject("imgRightSide.BackgroundImage"), System.Drawing.Image)
+        Me.imgRightSide.Location = New System.Drawing.Point(1267, 67)
+        Me.imgRightSide.Name = "imgRightSide"
+        Me.imgRightSide.Size = New System.Drawing.Size(10, 625)
+        Me.imgRightSide.TabIndex = 9
+        Me.imgRightSide.TabStop = False
+        '
+        'lblVersion
+        '
+        Me.lblVersion.AutoSize = True
+        Me.lblVersion.BackColor = System.Drawing.Color.Black
+        Me.lblVersion.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVersion.ForeColor = System.Drawing.Color.White
+        Me.lblVersion.Location = New System.Drawing.Point(10, 671)
+        Me.lblVersion.Name = "lblVersion"
+        Me.lblVersion.Size = New System.Drawing.Size(32, 16)
+        Me.lblVersion.TabIndex = 10
+        Me.lblVersion.Text = "1.0.0"
+        '
         'SplashUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1278, 691)
+        Me.Controls.Add(Me.lblVersion)
+        Me.Controls.Add(Me.imgRightSide)
+        Me.Controls.Add(Me.imgLeftSideBar)
+        Me.Controls.Add(Me.imgBottomBar)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.imgMinimizeSplash)
@@ -141,6 +191,9 @@ Partial Class SplashUI
         CType(Me.imgLaunchButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgSplash, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBannerSplash, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgLeftSideBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgRightSide, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,5 +206,9 @@ Partial Class SplashUI
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents timerBGCheck As System.Windows.Forms.Timer
+    Friend WithEvents imgBottomBar As System.Windows.Forms.PictureBox
+    Friend WithEvents imgLeftSideBar As System.Windows.Forms.PictureBox
+    Friend WithEvents imgRightSide As System.Windows.Forms.PictureBox
+    Friend WithEvents lblVersion As System.Windows.Forms.Label
 
 End Class
