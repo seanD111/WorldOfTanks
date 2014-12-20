@@ -110,13 +110,13 @@ Public NotInheritable Class MainUI
         Dim data As New dataFromAPI
         'Dim summoner As JObject = data.Parse(data.getJSON("ratminer"))
         'Label1.Text = summoner.Item("ratminer").Item("id")
-        Dim summoner As summoner
+        Dim summoner1 As New summoner
         try
-            summoner = data.getSummoner(TextBox1.Text)
+            summoner1.pullSummonerData(TextBox1.Text)
         
-            Label1.Text = summoner.name
-            Label2.Text = summoner.id
-            Label3.Text = summoner.summonerLevel
+            Label1.Text = summoner1.name
+            Label2.Text = summoner1.id
+            Label3.Text = summoner1.summonerLevel
         Catch
             MessageBox.Show("Username not found")
         End Try

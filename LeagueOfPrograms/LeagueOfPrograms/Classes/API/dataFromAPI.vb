@@ -9,6 +9,7 @@ Public Class dataFromAPI
         ReDim keys(3)
         keys(0) = "e5547c49-b045-4e3b-a486-63d69fefacdf"
         keys(1) = "ce57ec7f-3d6f-4481-89bc-c83e3310ab7d"
+        keys(2) = "a98f0029-9ce3-496e-b2ad-8f351ffe6678"
     End Sub
 
     Public Function getSummoner(ByVal summonerName As String)
@@ -33,7 +34,7 @@ Public Class dataFromAPI
 
     Public Function getMasteries(ByVal summonerID As String)
         ' original json object from url
-        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(0)
+        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(1)
         Dim objWC As New System.Net.WebClient()
         Dim json As String = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
         ' use this to get summoner object from JSON object
@@ -47,7 +48,7 @@ Public Class dataFromAPI
     End Function
     Public Function getRunes(ByVal summonerID As String)
         ' original json object from url
-        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/runes?api_key=" & keys(0)
+        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/runes?api_key=" & keys(2)
         Dim objWC As New System.Net.WebClient()
         Dim json As String = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
         ' use this to get summoner object from JSON object
@@ -75,7 +76,7 @@ Public Class dataFromAPI
     End Function
     Public Function getLeague(ByVal summonerID As String)
         ' original json object from url
-        URL = "https://na.api.pvp.net/api/lol/na/v2.5/league/by-summoner/" & summonerID & "/entry?api_key=" & keys(0)
+        URL = "https://na.api.pvp.net/api/lol/na/v2.5/league/by-summoner/" & summonerID & "/entry?api_key=" & keys(1)
         Dim objWC As New System.Net.WebClient()
         Dim json As String = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
         ' use this to get summoner object from JSON object
