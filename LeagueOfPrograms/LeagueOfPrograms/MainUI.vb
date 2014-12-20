@@ -107,12 +107,12 @@ Public NotInheritable Class MainUI
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim data As New summonerAPI
+        Dim data As New dataFromAPI
         'Dim summoner As JObject = data.Parse(data.getJSON("ratminer"))
         'Label1.Text = summoner.Item("ratminer").Item("id")
         Dim summoner As summoner
         try
-            summoner = data.JSONtoObject(TextBox1.Text)
+            summoner = data.getSummoner(TextBox1.Text)
         
             Label1.Text = summoner.name
             Label2.Text = summoner.id
