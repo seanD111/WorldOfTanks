@@ -108,8 +108,16 @@ Public NotInheritable Class MainUI
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim data As New summonerAPI
-        Dim summoner As JObject = data.Parse(data.getJSON("Stole His Crow"))
-        Label1.Text = summoner.Item("stolehiscrow").Item("name")
+        'Dim summoner As JObject = data.Parse(data.getJSON("ratminer"))
+        'Label1.Text = summoner.Item("ratminer").Item("id")
+        Dim summoner As summoner
+        summoner = data.JSONtoObject(TextBox1.Text)
+        Label1.Text = summoner.name
+        Label2.Text = summoner.id
+        Label3.Text = summoner.summonerLevel
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 End Class

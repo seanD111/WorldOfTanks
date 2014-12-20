@@ -16,28 +16,7 @@ Public Class dataFromAPI
         Return data
     End Function
 
-    Public Overridable Sub JSONtoObject()
-    End Sub
-    Public Overridable Sub ObjectToData()
-    End Sub
-
 End Class
-
-Public Class masteryAPI
-    Inherits dataFromAPI
-
-
-    Public Sub getJSON(ByVal summonerID As Long)
-        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(0)
-        Dim objWC As New System.Net.WebClient()
-        json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
-    End Sub
-    Overrides Sub JSONtoObject()
-        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
-End Class
-
 Public Class summonerAPI
     Inherits dataFromAPI
     Public Function getJSON(ByVal summonerName As String)
@@ -46,68 +25,69 @@ Public Class summonerAPI
         Dim objWC As New System.Net.WebClient()
         Return New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Function
-    Overrides Sub JSONtoObject()
-
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
+    Function JSONtoObject(ByVal summonerName As String)
+        Dim data As New summonerAPI
+        ' original json object from url
+        Dim json As String = data.getJSON(summonerName)
+        ' use this to get summoner object from JSON object
+        Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
+        ' name of the first item
+        Dim name As String = JsonObject.Properties.First.Name
+        ' stupid nested object in json
+        Dim summoner As summoner = JsonConvert.DeserializeObject(Of summoner)(JsonObject.Item(name).ToString())
+        ' finally return the summoner object
+        Return summoner
+    End Function
 End Class
+Public Class masteryAPI
+    Inherits dataFromAPI
 
 
+    Public Function getJSON(ByVal summonerID As String)
+        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(0)
+        Dim objWC As New System.Net.WebClient()
+        json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
+    End Function
+    Function JSONtoObject(ByVal summonerID As String)
+        Dim data As New masteryAPI
+        Return New JObject = data.Parse(data.getJSON(summonerID))
+    End Function
+End Class
 Public Class runeAPI
     Inherits dataFromAPI
-    Public Sub getJSON(ByVal summonerID As Long)
+    Public Function getJSON(ByVal summonerID As String)
         URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/runes?api_key=" & keys(0)
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
-    End Sub
+    End Function
 
-    Overrides Sub JSONtoObject()
-
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
+    Function JSONtoObject(ByVal summonerID As String)
+        Dim data As New runeAPI
+        Return New JObject = data.Parse(data.getJSON(summonerID))
+    End Function
 End Class
-
 Public Class statsAPI
     Inherits dataFromAPI
-    Public Sub getJSON(ByVal summonerID As Long)
+    Public Function getJSON(ByVal summonerID As Long)
         URL = "https://na.api.pvp.net/api/lol/na/v1.3/stats/by-summoner/" & summonerID & "/summary?api_key=" & keys(0)
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
-    End Sub
-    Overrides Sub JSONtoObject()
+    End Function
+    Function JSONtoObject(ByVal summonerID As String)
 
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
+        Dim data As New statsAPI
+        Return New JObject = data.Parse(data.getJSON(summonerID))
+    End Function
 End Class
 Public Class leagueAPI
     Inherits dataFromAPI
-    Public Sub getJSON(ByVal summonerID As Long)
+    Public Function getJSON(ByVal summonerID As Long)
         URL = "https://na.api.pvp.net/api/lol/na/v2.5/league/by-summoner/" & summonerID & "/entry?api_key=" & keys(0)
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
-    End Sub
-    Overrides Sub JSONtoObject()
-
-        Dim json As String = "{""ticker"":{""high"":5.31,""low"":4.23,""success"":True}}"
-        Dim data As wrapper = JsonConvert.DeserializeObject(Of wrapper)(json)
-
-    End Sub
-End Class
-
-
-Public Class wrapper
-    ' wrapper for "ticker" in json returned from server
-    Public ticker As ticker
-End Class
-
-Public Class ticker
-    Public Property high As Decimal
-    Public Property low As Decimal
-    Public Property success As Boolean
+    End Function
+    Function JSONtoObject(ByVal summonerID As String)
+        Dim data As New leagueAPI
+        Return New JObject = data.Parse(data.getJSON(summonerID))
+    End Function
 End Class
