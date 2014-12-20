@@ -1,5 +1,5 @@
 ﻿Public Class rune
     Inherits dataFromAPI
-    Private runeSlotId As Integer
-    Private runeId As Integer
+    Public Property runeSlotId As Integer
+    Public Property runeId As Integer
 End Class

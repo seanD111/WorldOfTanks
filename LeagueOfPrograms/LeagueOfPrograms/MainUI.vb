@@ -107,9 +107,7 @@ Public NotInheritable Class MainUI
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim data As New dataFromAPI
-        'Dim summoner As JObject = data.Parse(data.getJSON("ratminer"))
-        'Label1.Text = summoner.Item("ratminer").Item("id")
+
         Dim summoner1 As New summoner
         try
             summoner1.pullSummonerData(TextBox1.Text)
@@ -123,6 +121,19 @@ Public NotInheritable Class MainUI
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+
+        Dim summoner1 As New summoner
+
+        summoner1.pullMasteryData(Label2.Text)
+
+        Label6.Text = summoner1.masterySet(0).name
+        Label5.Text = summoner1.masterySet(0).masteries(0).id
+        Label4.Text = summoner1.masterySet(0).masteries(0).rank
 
     End Sub
 End Class

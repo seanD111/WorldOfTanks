@@ -4,11 +4,11 @@
     Public Property profileIconId As Integer
     Public Property summonerLevel As Long
     Public Property revisionDate As Long
-    Public Property masterySet As masteryPage
-    Public Property runeSet As runePage
+    Public Property masterySet As masteryPage()
+    Public Property runeSet As runePage()
     Public Property leagues As league
     Public Property highestRank As String
-    Public Property stats As modeStats
+    Public Property stats As modeStats()
 
     Public Sub pullSummonerData(ByVal summonerName As String)
         Dim data As New dataFromAPI
@@ -21,18 +21,22 @@
         revisionDate = tempSum.revisionDate
 
     End Sub
-    Public Sub pullMasteryData(ByVal summonerName As String)
+    Public Sub pullMasteryData(ByVal summonerID As String)
         Dim data As New dataFromAPI
-        id = data.getSummoner(summonerName)
+        Dim tempMast As masteryPage() = data.getMasteries(summonerID)
+        ReDim masterySet(tempMast.Length)
+        For i As Integer = 0 To tempMast.Length - 1
+            masterySet(i) = tempMast(i)
+        Next
 
     End Sub
-    Public Sub pullRuneData(ByVal summonerName As String)
+    Public Sub pullRuneData(ByVal summonerID As String)
         Dim data As New dataFromAPI
-        id = data.getSummoner(summonerName)
+        id = data.getSummoner(summonerID)
     End Sub
-    Public Sub pullLeagueData(ByVal summonerName As String)
+    Public Sub pullLeagueData(ByVal summonerID As String)
         Dim data As New dataFromAPI
-        id = data.getSummoner(summonerName)
+        id = data.getSummoner(summonerID)
 
     End Sub
 

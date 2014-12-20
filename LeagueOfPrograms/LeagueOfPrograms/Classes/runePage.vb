@@ -1,7 +1,7 @@
 ﻿Public Class runePage
     Inherits dataFromAPI
-    Private id As Long
-    Private name As String
-    Private current As Boolean
-    Private slots As rune()
+    Public Property id As Long
+    Public Property name As String
+    Public Property current As Boolean
+    Public Property slots As rune()
 End Class

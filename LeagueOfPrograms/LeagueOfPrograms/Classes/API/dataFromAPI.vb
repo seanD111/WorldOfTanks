@@ -22,29 +22,24 @@ Public Class dataFromAPI
         ' name of the first item
         Dim name As String = JsonObject.Properties.First.Name
         ' stupid nested object in json
-        Dim summoner As summoner = JsonConvert.DeserializeObject(Of summoner)(JsonObject.Item(name).ToString())
-        'call the other shit
-        'summoner.masterySet = getMasteries(summoner.id)
-        'summoner.runeSet = getRunes(summoner.id)
-        'summoner.leagues = getLeague(summoner.id)
-        'summoner.stats = getStats(summoner.id)
-        ' finally return the summoner object
-        Return summoner
+
+
+        Return JsonConvert.DeserializeObject(Of summoner)(JsonObject.Item(name).ToString())
     End Function
 
     Public Function getMasteries(ByVal summonerID As String)
         ' original json object from url
-        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(1)
+        URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(0)
         Dim objWC As New System.Net.WebClient()
         Dim json As String = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
         ' use this to get summoner object from JSON object
         Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
         ' name of the first item
-        Dim name As String = JsonObject.Properties.First.Name
+        Dim id As String = JsonObject.Properties.First.Name
         ' stupid nested object in json
-        Dim mastery As mastery = JsonConvert.DeserializeObject(Of mastery)(JsonObject.Item(name).ToString())
+        Dim masteries As masteryPage() = JsonConvert.DeserializeObject(Of masteryPage())(JsonObject.Item(id).Item("pages").ToString())
         ' finally return the summoner object
-        Return mastery
+        Return masteries
     End Function
     Public Function getRunes(ByVal summonerID As String)
         ' original json object from url
