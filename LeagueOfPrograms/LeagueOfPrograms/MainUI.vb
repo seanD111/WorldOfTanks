@@ -111,10 +111,15 @@ Public NotInheritable Class MainUI
         'Dim summoner As JObject = data.Parse(data.getJSON("ratminer"))
         'Label1.Text = summoner.Item("ratminer").Item("id")
         Dim summoner As summoner
-        summoner = data.JSONtoObject(TextBox1.Text)
-        Label1.Text = summoner.name
-        Label2.Text = summoner.id
-        Label3.Text = summoner.summonerLevel
+        try
+            summoner = data.JSONtoObject(TextBox1.Text)
+        
+            Label1.Text = summoner.name
+            Label2.Text = summoner.id
+            Label3.Text = summoner.summonerLevel
+        Catch
+            MessageBox.Show("Username not found")
+        End Try
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged

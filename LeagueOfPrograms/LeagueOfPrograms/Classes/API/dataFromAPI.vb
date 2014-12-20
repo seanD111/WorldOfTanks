@@ -24,6 +24,8 @@ Public Class summonerAPI
         URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" & summonerName & "?api_key=" & keys(0)
         Dim objWC As New System.Net.WebClient()
         Return New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
+        
+
     End Function
     Function JSONtoObject(ByVal summonerName As String)
         Dim data As New summonerAPI
@@ -41,8 +43,6 @@ Public Class summonerAPI
 End Class
 Public Class masteryAPI
     Inherits dataFromAPI
-
-
     Public Function getJSON(ByVal summonerID As String)
         URL = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/" & summonerID & "/masteries?api_key=" & keys(0)
         Dim objWC As New System.Net.WebClient()
@@ -50,7 +50,16 @@ Public Class masteryAPI
     End Function
     Function JSONtoObject(ByVal summonerID As String)
         Dim data As New masteryAPI
-        Return New JObject = data.Parse(data.getJSON(summonerID))
+        ' original json object from url
+        Dim json As String = data.getJSON(summonerID)
+        ' use this to get summoner object from JSON object
+        Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
+        ' name of the first item
+        Dim name As String = JsonObject.Properties.First.Name
+        ' stupid nested object in json
+        Dim mastery As mastery = JsonConvert.DeserializeObject(Of mastery)(JsonObject.Item(name).ToString())
+        ' finally return the summoner object
+        Return mastery
     End Function
 End Class
 Public Class runeAPI
@@ -60,10 +69,18 @@ Public Class runeAPI
         Dim objWC As New System.Net.WebClient()
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Function
-
     Function JSONtoObject(ByVal summonerID As String)
-        Dim data As New runeAPI
-        Return New JObject = data.Parse(data.getJSON(summonerID))
+        Dim data As New summonerAPI
+        ' original json object from url
+        Dim json As String = data.getJSON(summonerID)
+        ' use this to get summoner object from JSON object
+        Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
+        ' name of the first item
+        Dim name As String = JsonObject.Properties.First.Name
+        ' stupid nested object in json
+        Dim rune As rune = JsonConvert.DeserializeObject(Of rune)(JsonObject.Item(name).ToString())
+        ' finally return the summoner object
+        Return rune
     End Function
 End Class
 Public Class statsAPI
@@ -74,9 +91,17 @@ Public Class statsAPI
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Function
     Function JSONtoObject(ByVal summonerID As String)
-
-        Dim data As New statsAPI
-        Return New JObject = data.Parse(data.getJSON(summonerID))
+        Dim data As New summonerAPI
+        ' original json object from url
+        Dim json As String = data.getJSON(summonerID)
+        ' use this to get summoner object from JSON object
+        Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
+        ' name of the first item
+        Dim name As String = JsonObject.Properties.First.Name
+        ' stupid nested object in json
+        Dim modeStats As modeStats = JsonConvert.DeserializeObject(Of modeStats)(JsonObject.Item(name).ToString())
+        ' finally return the summoner object
+        Return modeStats
     End Function
 End Class
 Public Class leagueAPI
@@ -87,7 +112,16 @@ Public Class leagueAPI
         json = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
     End Function
     Function JSONtoObject(ByVal summonerID As String)
-        Dim data As New leagueAPI
-        Return New JObject = data.Parse(data.getJSON(summonerID))
+        Dim data As New summonerAPI
+        ' original json object from url
+        Dim json As String = data.getJSON(summonerID)
+        ' use this to get summoner object from JSON object
+        Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
+        ' name of the first item
+        Dim name As String = JsonObject.Properties.First.Name
+        ' stupid nested object in json
+        Dim league As league = JsonConvert.DeserializeObject(Of league)(JsonObject.Item(name).ToString())
+        ' finally return the summoner object
+        Return league
     End Function
 End Class
