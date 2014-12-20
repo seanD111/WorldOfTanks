@@ -146,4 +146,18 @@ Public NotInheritable Class MainUI
         Label8.Text = summoner1.runeSet(0).slots(0).runeId
         Label7.Text = summoner1.runeSet(0).slots(0).runeSlotId
     End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Dim summoner1 As New summoner
+
+        summoner1.pullStatsData(Label2.Text)
+
+        Label15.Text = summoner1.stats(0).playerStatSummaryType
+        Label14.Text = summoner1.stats(0).aggregatedStats.totalMagicDamageDealt
+        Label13.Text = summoner1.stats(0).aggregatedStats.totalHeal
+        Label12.Text = summoner1.stats(0).wins
+        Label11.Text = summoner1.stats(0).losses
+        Label10.Text = summoner1.stats(0).aggregatedStats.totalPentaKills
+    End Sub
+
 End Class

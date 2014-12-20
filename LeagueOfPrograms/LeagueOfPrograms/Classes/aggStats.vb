@@ -1,0 +1,36 @@
+﻿Public Class aggStats
+    Public Property botGamesPlayed As Integer
+    Public Property killingSpree As Integer
+    Public Property maxChampionsKilled As Integer
+    Public Property maxLargestCriticalStrike As Integer
+    Public Property maxLargestKillingSpree As Integer
+    Public Property maxNumDeaths As Integer
+    Public Property maxTimePlayed As Integer
+    Public Property maxTimeSpentLiving As Integer
+    Public Property mostChampionKillsPerSession As Integer
+    Public Property mostSpellsCast As Integer
+    Public Property normalGamesPlayed As Integer
+    Public Property rankedPremadeGamesPlayed As Integer
+    Public Property rankedSoloGamesPlayed As Integer
+    Public Property totalAssists As Integer
+    Public Property totalChampionKills As Integer
+    Public Property totalDamageDealt As Integer
+    Public Property totalDamageTaken As Integer
+    Public Property totalDeathsPerSession As Integer
+    Public Property totalDoubleKills As Integer
+    Public Property totalFirstBlood As Integer
+    Public Property totalGoldEarned As Integer
+    Public Property totalHeal As Integer
+    Public Property totalMagicDamageDealt As Integer
+    Public Property totalMinionKills As Integer
+    Public Property totalNeutralMinionsKilled As Integer
+    Public Property totalPentaKills As Integer
+    Public Property totalPhysicalDamageDealt As Integer
+    Public Property totalQuadraKills As Integer
+    Public Property totalSessionsLost As Integer
+    Public Property totalSessionsPlayed As Integer
+    Public Property totalSessionsWon As Integer
+    Public Property totalTripleKills As Integer
+    Public Property totalTurretsKilled As Integer
+    Public Property totalUnrealKills As Integer
+End Class

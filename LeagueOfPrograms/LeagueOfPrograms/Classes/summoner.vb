@@ -44,4 +44,13 @@
 
     End Sub
 
+    Public Sub pullStatsData(ByVal summonerID As String)
+        Dim data As New dataFromAPI
+        Dim tempStats As modeStats() = data.getStats(summonerID)
+        ReDim stats(tempStats.Length)
+        For i As Integer = 0 To tempStats.Length - 1
+            stats(i) = tempStats(i)
+        Next
+    End Sub
+
 End Class

@@ -62,10 +62,9 @@ Public Class dataFromAPI
         Dim json As String = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
         ' use this to get summoner object from JSON object
         Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
-        ' name of the first item
-        Dim name As String = JsonObject.Properties.First.Name
-        ' stupid nested object in json
-        Dim modeStats As modeStats = JsonConvert.DeserializeObject(Of modeStats)(JsonObject.Item(name).ToString())
+
+
+        Dim modeStats As modeStats() = JsonConvert.DeserializeObject(Of modeStats())(JsonObject.Item("playerStatSummaries").ToString())
         ' finally return the summoner object
         Return modeStats
     End Function

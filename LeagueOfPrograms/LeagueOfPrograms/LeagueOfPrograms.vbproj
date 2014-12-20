@@ -96,6 +96,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\aggStats.vb" />
     <Compile Include="Classes\API\dataFromAPI.vb" />
     <Compile Include="Classes\league.vb" />
     <Compile Include="Classes\leagueEntry.vb" />
