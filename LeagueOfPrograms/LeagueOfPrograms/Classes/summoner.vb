@@ -32,7 +32,11 @@
     End Sub
     Public Sub pullRuneData(ByVal summonerID As String)
         Dim data As New dataFromAPI
-        id = data.getSummoner(summonerID)
+        Dim tempRune As runePage() = data.getRunes(summonerID)
+        ReDim runeSet(tempRune.Length)
+        For i As Integer = 0 To tempRune.Length - 1
+            runeSet(i) = tempRune(i)
+        Next
     End Sub
     Public Sub pullLeagueData(ByVal summonerID As String)
         Dim data As New dataFromAPI

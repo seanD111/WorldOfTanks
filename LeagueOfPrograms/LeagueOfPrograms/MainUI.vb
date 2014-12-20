@@ -136,4 +136,14 @@ Public NotInheritable Class MainUI
         Label4.Text = summoner1.masterySet(0).masteries(0).rank
 
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Dim summoner1 As New summoner
+
+        summoner1.pullRuneData(Label2.Text)
+
+        Label9.Text = summoner1.runeSet(0).name
+        Label8.Text = summoner1.runeSet(0).slots(0).runeId
+        Label7.Text = summoner1.runeSet(0).slots(0).runeSlotId
+    End Sub
 End Class
