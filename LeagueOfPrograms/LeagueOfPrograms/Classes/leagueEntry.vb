@@ -1,13 +1,13 @@
 ﻿Public Class leagueEntry
 
-    Public Property playerOrTeamId As String
-    Public Property playerOrTeamName As String
-    Public Property division As String
-    Public Property leaguePoints As Integer
-    Public Property wins As Integer
-    Public Property isHotStreak As Boolean
-    Public Property isVeteran As Boolean
-    Public Property isFreshBlood As Boolean
-    Public Property isInactive As Boolean
+    Private playerOrTeamId As String
+    Private playerOrTeamName As String
+    Private division As String
+    Private leaguePoints As Integer
+    Private wins As Integer
+    Private isHotStreak As Boolean
+    Private isVeteran As Boolean
+    Private isFreshBlood As Boolean
+    Private isInactive As Boolean
 
 End Class

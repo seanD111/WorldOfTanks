@@ -59,6 +59,7 @@ Partial Class MainUI
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -72,6 +73,7 @@ Partial Class MainUI
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+<<<<<<< HEAD
 <<<<<<< HEAD
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -90,6 +92,8 @@ Partial Class MainUI
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
 >>>>>>> origin/master
+=======
+>>>>>>> parent of f57ef6e... added leagues
         CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgGreenButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -414,7 +418,7 @@ Partial Class MainUI
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Summoner"
+        Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
@@ -474,6 +478,13 @@ Partial Class MainUI
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "Label5"
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(536, 180)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 34
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -490,7 +501,7 @@ Partial Class MainUI
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 32
-        Me.Button2.Text = "Masteries"
+        Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label7
@@ -529,7 +540,7 @@ Partial Class MainUI
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 37
-        Me.Button3.Text = "Runes"
+        Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label10
@@ -568,7 +579,7 @@ Partial Class MainUI
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 41
-        Me.Button4.Text = "Stats"
+        Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Label13
@@ -601,6 +612,7 @@ Partial Class MainUI
         Me.Label15.TabIndex = 45
         Me.Label15.Text = "Label15"
         '
+<<<<<<< HEAD
 <<<<<<< HEAD
         'Panel1
         '
@@ -760,12 +772,15 @@ Partial Class MainUI
         Me.Button5.UseVisualStyleBackColor = True
 >>>>>>> origin/master
         '
+=======
+>>>>>>> parent of f57ef6e... added leagues
         'MainUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1280, 695)
+<<<<<<< HEAD
 <<<<<<< HEAD
         Me.Controls.Add(Me.Panel1)
 =======
@@ -777,6 +792,8 @@ Partial Class MainUI
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Button5)
 >>>>>>> origin/master
+=======
+>>>>>>> parent of f57ef6e... added leagues
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
@@ -790,6 +807,7 @@ Partial Class MainUI
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
@@ -889,6 +907,7 @@ Partial Class MainUI
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
@@ -902,6 +921,7 @@ Partial Class MainUI
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
+<<<<<<< HEAD
 <<<<<<< HEAD
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -920,5 +940,7 @@ Partial Class MainUI
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
 >>>>>>> origin/master
+=======
+>>>>>>> parent of f57ef6e... added leagues
 
 End Class

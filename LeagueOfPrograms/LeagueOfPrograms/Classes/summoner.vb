@@ -6,7 +6,7 @@
     Public Property revisionDate As Long
     Public Property masterySet As masteryPage()
     Public Property runeSet As runePage()
-    Public Property leagues As league()
+    Public Property leagues As league
     Public Property highestRank As String
     Public Property stats As modeStats()
 
@@ -40,11 +40,8 @@
     End Sub
     Public Sub pullLeagueData(ByVal summonerID As String)
         Dim data As New dataFromAPI
-        Dim tempLeague As league() = data.getLeague(summonerID)
-        ReDim leagues(tempLeague.Length)
-        For i As Integer = 0 To tempLeague.Length - 1
-            leagues(i) = tempLeague(i)
-        Next
+        id = data.getSummoner(summonerID)
+
     End Sub
 
     Public Sub pullStatsData(ByVal summonerID As String)
