@@ -34,7 +34,7 @@ Partial Class SplashUI
         Me.imgLaunchButton = New System.Windows.Forms.PictureBox()
         Me.imgSplash = New System.Windows.Forms.PictureBox()
         Me.imgBannerSplash = New System.Windows.Forms.PictureBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbSplashSelect = New System.Windows.Forms.ComboBox()
         CType(Me.imgRightSide, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgLeftSideBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -137,31 +137,31 @@ Partial Class SplashUI
         Me.imgBannerSplash.TabIndex = 0
         Me.imgBannerSplash.TabStop = False
         '
-        'ComboBox1
+        'cbSplashSelect
         '
-        Me.ComboBox1.BackColor = System.Drawing.Color.Black
-        Me.ComboBox1.DropDownHeight = 95
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.DropDownWidth = 100
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.Font = New System.Drawing.Font("Arial Narrow", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.ForeColor = System.Drawing.Color.White
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.IntegralHeight = False
-        Me.ComboBox1.Items.AddRange(New Object() {"Orianna", "Annie"})
-        Me.ComboBox1.Location = New System.Drawing.Point(1089, 43)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ComboBox1.Size = New System.Drawing.Size(62, 21)
-        Me.ComboBox1.TabIndex = 11
-        Me.ComboBox1.TabStop = False
+        Me.cbSplashSelect.BackColor = System.Drawing.Color.Black
+        Me.cbSplashSelect.DropDownHeight = 95
+        Me.cbSplashSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbSplashSelect.DropDownWidth = 100
+        Me.cbSplashSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbSplashSelect.Font = New System.Drawing.Font("Arial Narrow", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSplashSelect.ForeColor = System.Drawing.Color.White
+        Me.cbSplashSelect.FormattingEnabled = True
+        Me.cbSplashSelect.IntegralHeight = False
+        Me.cbSplashSelect.Items.AddRange(New Object() {"Orianna", "Annie"})
+        Me.cbSplashSelect.Location = New System.Drawing.Point(1089, 43)
+        Me.cbSplashSelect.Name = "cbSplashSelect"
+        Me.cbSplashSelect.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.cbSplashSelect.Size = New System.Drawing.Size(62, 21)
+        Me.cbSplashSelect.TabIndex = 11
+        Me.cbSplashSelect.TabStop = False
         '
         'SplashUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1278, 691)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbSplashSelect)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.imgRightSide)
         Me.Controls.Add(Me.imgLeftSideBar)
@@ -198,6 +198,6 @@ Partial Class SplashUI
     Friend WithEvents imgLeftSideBar As System.Windows.Forms.PictureBox
     Friend WithEvents imgRightSide As System.Windows.Forms.PictureBox
     Friend WithEvents lblVersion As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbSplashSelect As System.Windows.Forms.ComboBox
 
 End Class

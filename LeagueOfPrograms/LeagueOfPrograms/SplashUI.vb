@@ -1,6 +1,8 @@
 ﻿Imports System
 Imports System.IO
 Imports System.Text
+'Imports System.Net  => Used for update system, see below
+
 
 Public Class SplashUI
 
@@ -12,6 +14,7 @@ Public Class SplashUI
         Public Shared fullpath As String = System.Reflection.Assembly.GetExecutingAssembly().Location
 
         Public Shared pathOnly As String = My.Computer.FileSystem.GetParentPath(fullpath)
+        'defined our application location on ANY computer. Just use pathOnly if you need to call it.
     End Class
 
     Private Sub imgLaunchButton_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles imgLaunchButton.MouseHover
@@ -29,8 +32,8 @@ Public Class SplashUI
 
 
         My.Computer.Audio.Play(My.Resources.buttonclickaudio,
-               AudioPlayMode.BackgroundLoop)
-        System.Threading.Thread.Sleep(900)
+               AudioPlayMode.BackgroundLoop) ' controls the clicking noise we hear when pressing button on splash screen
+        System.Threading.Thread.Sleep(900) ' pause to hear clip
         My.Computer.Audio.Stop()
 
         Me.Hide()
@@ -88,13 +91,35 @@ Public Class SplashUI
     End Sub
 
 
+    'Public Sub CheckForUpdates()
+
+    'Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("https://www.dropbox.com/s/mvdokbodpclmtpk/version.txt?dl=0")
+
+    'Dim response As System.Net.HttpWebResponse = request.GetResponse()
+    'Dim sr As System.IO.StreamReader = New System.IO.StreamReader(response.GetResponseStream())
+    'Dim newestversion As String = sr.ReadToEnd()
+    'Dim currentversion As String = Application.ProductVersion
+    ' If newestversion.Contains(currentversion) Then
+
+    'Else : MsgBox("Update time!")
+    ' My.Computer.Network.DownloadFile("https://www.dropbox.com/s/x2hibnw46a8ikng/Steam.exe?dl=1", globalvairables.pathOnly & "\LeagueOfPrograms.exe")
+
+
+    ' End Sub
+
+    ''''''''''''''''''''''''''''''''''''''''UPDATE SYSTEM''''''''''''''''''''''''''''''''''
+    ''''''''''''''''''Commented out until it's needed, but coding is done''''''''''''''''''
+    '''''''''''''''''''''''''''''''''''''''-Kurt''''''''''''''''''''''''''''''''''''''''''
+
+
+
     Private Sub SplashUI_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         My.Computer.Audio.Play(My.Resources.LoginScreenLoop,
               AudioPlayMode.BackgroundLoop)
-   
+
 
         If My.Computer.FileSystem.FileExists(GlobalVariables.pathOnly & "\settings.txt") Then
-            Dim fileReader As String
+            Dim fileReader As String 'so messy but YOLO nigga
             fileReader = My.Computer.FileSystem.ReadAllText(GlobalVariables.pathOnly & "\settings.txt")
             If fileReader = "Orianna" Then
                 imgSplash.BackgroundImage = My.Resources.wallpaper1
@@ -103,7 +128,7 @@ Public Class SplashUI
                 imgSplash.BackgroundImage = My.Resources.wallpaper2
                 imgSplash.BackgroundImageLayout = ImageLayout.Stretch
             End If
-        Else
+        Else 'double else OP
             Dim fs As FileStream = File.Create(GlobalVariables.pathOnly & "\settings.txt")
 
             ' Add text to the file. 
@@ -111,20 +136,25 @@ Public Class SplashUI
             fs.Write(info, 0, info.Length)
             fs.Close()
 
+
+
+
+
+            'CheckForUpdates()  ==> Update system, see above
+
+
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
-        If ComboBox1.SelectedItem = "Orianna" Then
+    Private Sub cbSplashSelect_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbSplashSelect.SelectedIndexChanged
+        If cbSplashSelect.SelectedItem = "Orianna" Then
             imgSplash.BackgroundImage = My.Resources.wallpaper1
             imgSplash.BackgroundImageLayout = ImageLayout.Center
-            ComboBox1.Enabled = False
-            ComboBox1.Enabled = True
-      
+            cbSplashSelect.Enabled = False ' best way to take focus off the combobox, looks ugly otherwise
+            cbSplashSelect.Enabled = True
+
 
             Dim fs As FileStream = File.Create(GlobalVariables.pathOnly & "\settings.txt")
-
-            ' Add text to the file. 
             Dim info As Byte() = New UTF8Encoding(True).GetBytes("Orianna")
             fs.Write(info, 0, info.Length)
             fs.Close()
@@ -133,22 +163,16 @@ Public Class SplashUI
         Else
             imgSplash.BackgroundImage = My.Resources.wallpaper2
             imgSplash.BackgroundImageLayout = ImageLayout.Stretch
-            ComboBox1.Enabled = False
-            ComboBox1.Enabled = True
+            cbSplashSelect.Enabled = False ' see above
+            cbSplashSelect.Enabled = True
 
 
-
-     
             Dim fs As FileStream = File.Create(GlobalVariables.pathOnly & "\settings.txt")
-
-            ' Add text to the file. 
             Dim info As Byte() = New UTF8Encoding(True).GetBytes("Annie")
             fs.Write(info, 0, info.Length)
             fs.Close()
         End If
     End Sub
 
-
-  
 End Class
 
