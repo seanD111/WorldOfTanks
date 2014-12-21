@@ -59,7 +59,6 @@ Partial Class MainUI
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -73,6 +72,13 @@ Partial Class MainUI
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgGreenButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -389,7 +395,7 @@ Partial Class MainUI
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Summoner"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
@@ -449,13 +455,6 @@ Partial Class MainUI
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "Label5"
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(536, 180)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 34
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -472,7 +471,7 @@ Partial Class MainUI
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 32
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Masteries"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label7
@@ -511,7 +510,7 @@ Partial Class MainUI
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 37
-        Me.Button3.Text = "Button3"
+        Me.Button3.Text = "Runes"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label10
@@ -550,7 +549,7 @@ Partial Class MainUI
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 41
-        Me.Button4.Text = "Button4"
+        Me.Button4.Text = "Stats"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Label13
@@ -583,12 +582,88 @@ Partial Class MainUI
         Me.Label15.TabIndex = 45
         Me.Label15.Text = "Label15"
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(515, 488)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(45, 13)
+        Me.Label16.TabIndex = 54
+        Me.Label16.Text = "Label16"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(515, 468)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(45, 13)
+        Me.Label17.TabIndex = 53
+        Me.Label17.Text = "Label17"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(515, 451)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(45, 13)
+        Me.Label18.TabIndex = 52
+        Me.Label18.Text = "Label18"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(515, 426)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(45, 13)
+        Me.Label19.TabIndex = 51
+        Me.Label19.Text = "Label19"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(515, 406)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(45, 13)
+        Me.Label20.TabIndex = 50
+        Me.Label20.Text = "Label20"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.White
+        Me.Label21.Location = New System.Drawing.Point(515, 389)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(45, 13)
+        Me.Label21.TabIndex = 49
+        Me.Label21.Text = "Label21"
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(518, 353)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 48
+        Me.Button5.Text = "League"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'MainUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1280, 695)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label21)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
@@ -602,7 +677,6 @@ Partial Class MainUI
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
@@ -694,7 +768,6 @@ Partial Class MainUI
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
@@ -708,5 +781,12 @@ Partial Class MainUI
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 
 End Class

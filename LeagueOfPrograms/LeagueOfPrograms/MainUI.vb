@@ -166,5 +166,14 @@ Public NotInheritable Class MainUI
     End Sub
 
 
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        summoner1.pullLeagueData(Label2.Text)
+        Label21.Text = summoner1.leagues(0).name
+        Label20.Text = summoner1.leagues(0).tier
+        Label19.Text = summoner1.leagues(0).queue
+        Label18.Text = summoner1.leagues(0).entries(0).division
+        Label17.Text = summoner1.leagues(0).entries(0).leaguePoints
+
+    End Sub
 End Class
 
