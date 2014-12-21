@@ -36,8 +36,8 @@ Public Class SplashUI
         System.Threading.Thread.Sleep(900) ' pause to hear clip
         My.Computer.Audio.Stop()
 
-        Me.Hide()
         MainUI.Show()
+        Me.Close()
     End Sub
 
     Private Sub imgCloseSplash_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgCloseSplash.Click
@@ -45,9 +45,7 @@ Public Class SplashUI
     End Sub
 
     Private Sub imgMinimizeSplash_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgMinimizeSplash.Click
-        Me.Hide()
-
-        'this needs to be fixed
+     Me.WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub imgSplash_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles imgSplash.MouseDown

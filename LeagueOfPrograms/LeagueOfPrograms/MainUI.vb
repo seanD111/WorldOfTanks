@@ -23,13 +23,9 @@ Public NotInheritable Class MainUI
         End If
     End Sub
 
-    Private Sub MainUI_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
-        SplashUI.Close()
-    End Sub
 
     Private Sub PictureBox15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgExitButton.Click
         Me.Close()
-        SplashUI.Close()
     End Sub
 
 
@@ -172,6 +168,10 @@ Public NotInheritable Class MainUI
 
     Private Sub Label16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label16.Click
 
+    End Sub
+
+    Private Sub PictureBox18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox18.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class
 
