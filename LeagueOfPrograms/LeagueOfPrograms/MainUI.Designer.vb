@@ -75,6 +75,7 @@ Partial Class MainUI
         Me.Label15 = New System.Windows.Forms.Label()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -92,6 +93,8 @@ Partial Class MainUI
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
 >>>>>>> origin/master
+=======
+>>>>>>> parent of f57ef6e... added leagues
 =======
 >>>>>>> parent of f57ef6e... added leagues
         CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -614,6 +617,7 @@ Partial Class MainUI
         '
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Panel1
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
@@ -774,12 +778,15 @@ Partial Class MainUI
         '
 =======
 >>>>>>> parent of f57ef6e... added leagues
+=======
+>>>>>>> parent of f57ef6e... added leagues
         'MainUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1280, 695)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         Me.Controls.Add(Me.Panel1)
@@ -792,6 +799,8 @@ Partial Class MainUI
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Button5)
 >>>>>>> origin/master
+=======
+>>>>>>> parent of f57ef6e... added leagues
 =======
 >>>>>>> parent of f57ef6e... added leagues
         Me.Controls.Add(Me.Label13)
@@ -923,6 +932,7 @@ Partial Class MainUI
     Friend WithEvents Label15 As System.Windows.Forms.Label
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
@@ -940,6 +950,8 @@ Partial Class MainUI
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
 >>>>>>> origin/master
+=======
+>>>>>>> parent of f57ef6e... added leagues
 =======
 >>>>>>> parent of f57ef6e... added leagues
 
