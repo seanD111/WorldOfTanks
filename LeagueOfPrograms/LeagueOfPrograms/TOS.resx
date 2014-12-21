@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="imgBG.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAewAAAIxCAYAAACPYosMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAP+lSURBVHhe7P1n2CVHde6NA5JmNDmPspBG0iiMNMpESYAI
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAP+lSURBVHhe7P1n2CVHde6NA5JmNDmPspBG0iiMNMpESYAI
         kkAiiSxyRmSEyTnnnHPGxibZYDDRmGCbbIONjQNO55z3/74fz4fzsf/3vWrdq1dVV+9nPzOD7XNd+vC7
         KnTv3h2q6terup/93OTUcy8cTkns2V84GZx0zpSbnz1yIjghcTzZV9LjCNY/FilR/hgsP0YpONo5Cuw6
         A+lZWA/fzfIxSJk/FvsVoMzPcz2uv+P0ke1ib8HqPN2GdCc+sxPb3YHP7zzvwmH3hdiWcyw4ztOTwAlg
@@ -2367,10 +2367,10 @@
         AeN+7BvxfT6d8QY7768lvmwihciW92Kn75W9iLGEk/smuxH3/wO4uKF2kehn9gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="PictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="imgOK.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHwAAAAkCAYAAABLw14kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAAfHSURBVHhe7ZhZT1VnFIZ34oWJcZ7n4U5LAlrTElqt0mjQ
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAfHSURBVHhe7ZhZT1VnFIZ34oWJcZ7n4U5LAlrTElqt0mjQ
         iIBYKaVRGSqIWqjVFotiiDXWoUZthZKCiDSa6I3zFI1/bZX3a96d5eLb++zDOUdOAxdPVs643rWe/W2G
         YPhak/xzvUkm68SowdDVBhn6vV4m68SoweDlAzJ4+aDMnz9fFi5c6GXRokWOxYsXO5YsWRKydOlSWbZs
         mWP58uVeVqxYEVawcuXK91i1atV7rF69+j3WrFkT1qTYz/G7+P3sxf42E7PaWSycXe8EcFfcnd3pggUL
@@ -2406,7 +2406,7 @@
         Nw7OQjgj57a7yFec58ZdBdI0wmSdGDWo3/mRHNyxTibrRKjr5F8FRJEFGthQSgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
+  <data name="rtbTOS.Text" xml:space="preserve">
     <value>LeagueOfPrograms isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
 
 

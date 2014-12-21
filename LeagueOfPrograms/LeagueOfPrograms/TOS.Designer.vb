@@ -24,68 +24,68 @@ Partial Class TOS
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TOS))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.imgBG = New System.Windows.Forms.PictureBox()
+        Me.imgOK = New System.Windows.Forms.PictureBox()
+        Me.rtbTOS = New System.Windows.Forms.RichTextBox()
+        CType(Me.imgBG, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgOK, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'imgBG
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(-17, -4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(470, 533)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.imgBG.BackgroundImage = CType(resources.GetObject("imgBG.BackgroundImage"), System.Drawing.Image)
+        Me.imgBG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.imgBG.Location = New System.Drawing.Point(-17, -4)
+        Me.imgBG.Name = "imgBG"
+        Me.imgBG.Size = New System.Drawing.Size(470, 533)
+        Me.imgBG.TabIndex = 0
+        Me.imgBG.TabStop = False
         '
-        'PictureBox2
+        'imgOK
         '
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(152, 464)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(126, 36)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.imgOK.BackgroundImage = CType(resources.GetObject("imgOK.BackgroundImage"), System.Drawing.Image)
+        Me.imgOK.Location = New System.Drawing.Point(152, 464)
+        Me.imgOK.Name = "imgOK"
+        Me.imgOK.Size = New System.Drawing.Size(126, 36)
+        Me.imgOK.TabIndex = 1
+        Me.imgOK.TabStop = False
         '
-        'RichTextBox1
+        'rtbTOS
         '
-        Me.RichTextBox1.BackColor = System.Drawing.Color.Black
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.ForeColor = System.Drawing.Color.White
-        Me.RichTextBox1.Location = New System.Drawing.Point(36, 91)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(363, 357)
-        Me.RichTextBox1.TabIndex = 3
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        Me.rtbTOS.BackColor = System.Drawing.Color.Black
+        Me.rtbTOS.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtbTOS.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbTOS.ForeColor = System.Drawing.Color.White
+        Me.rtbTOS.Location = New System.Drawing.Point(36, 91)
+        Me.rtbTOS.Name = "rtbTOS"
+        Me.rtbTOS.Size = New System.Drawing.Size(363, 357)
+        Me.rtbTOS.TabIndex = 3
+        Me.rtbTOS.Text = resources.GetString("rtbTOS.Text")
         '
         'TOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(436, 526)
-        Me.Controls.Add(Me.RichTextBox1)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.rtbTOS)
+        Me.Controls.Add(Me.imgOK)
+        Me.Controls.Add(Me.imgBG)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "TOS"
         Me.Padding = New System.Windows.Forms.Padding(9)
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AboutBox1"
         Me.TopMost = True
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBG, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgOK, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents imgBG As System.Windows.Forms.PictureBox
+    Friend WithEvents imgOK As System.Windows.Forms.PictureBox
+    Friend WithEvents rtbTOS As System.Windows.Forms.RichTextBox
 
 End Class
