@@ -24,8 +24,6 @@ Partial Class SplashUI
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashUI))
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.timerBGCheck = New System.Windows.Forms.Timer(Me.components)
         Me.lblVersion = New System.Windows.Forms.Label()
         Me.imgRightSide = New System.Windows.Forms.PictureBox()
@@ -36,6 +34,7 @@ Partial Class SplashUI
         Me.imgLaunchButton = New System.Windows.Forms.PictureBox()
         Me.imgSplash = New System.Windows.Forms.PictureBox()
         Me.imgBannerSplash = New System.Windows.Forms.PictureBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.imgRightSide, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgLeftSideBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,34 +44,6 @@ Partial Class SplashUI
         CType(Me.imgSplash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBannerSplash, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.BackColor = System.Drawing.Color.Black
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Arial Narrow", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.ForeColor = System.Drawing.Color.White
-        Me.RadioButton1.Location = New System.Drawing.Point(1088, 49)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(29, 17)
-        Me.RadioButton1.TabIndex = 5
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "1"
-        Me.RadioButton1.UseVisualStyleBackColor = False
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.BackColor = System.Drawing.Color.Black
-        Me.RadioButton2.Font = New System.Drawing.Font("Arial Narrow", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(1125, 49)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(29, 17)
-        Me.RadioButton2.TabIndex = 6
-        Me.RadioButton2.Text = "2"
-        Me.RadioButton2.UseVisualStyleBackColor = False
         '
         'timerBGCheck
         '
@@ -166,17 +137,35 @@ Partial Class SplashUI
         Me.imgBannerSplash.TabIndex = 0
         Me.imgBannerSplash.TabStop = False
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.Black
+        Me.ComboBox1.DropDownHeight = 95
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.DropDownWidth = 100
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Narrow", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.ForeColor = System.Drawing.Color.White
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.IntegralHeight = False
+        Me.ComboBox1.Items.AddRange(New Object() {"Orianna", "Annie"})
+        Me.ComboBox1.Location = New System.Drawing.Point(1089, 43)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.ComboBox1.Size = New System.Drawing.Size(62, 21)
+        Me.ComboBox1.TabIndex = 11
+        Me.ComboBox1.TabStop = False
+        '
         'SplashUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1278, 691)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.imgRightSide)
         Me.Controls.Add(Me.imgLeftSideBar)
         Me.Controls.Add(Me.imgBottomBar)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.imgMinimizeSplash)
         Me.Controls.Add(Me.imgCloseSplash)
         Me.Controls.Add(Me.imgLaunchButton)
@@ -204,12 +193,11 @@ Partial Class SplashUI
     Friend WithEvents imgLaunchButton As System.Windows.Forms.PictureBox
     Friend WithEvents imgCloseSplash As System.Windows.Forms.PictureBox
     Friend WithEvents imgMinimizeSplash As System.Windows.Forms.PictureBox
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents timerBGCheck As System.Windows.Forms.Timer
     Friend WithEvents imgBottomBar As System.Windows.Forms.PictureBox
     Friend WithEvents imgLeftSideBar As System.Windows.Forms.PictureBox
     Friend WithEvents imgRightSide As System.Windows.Forms.PictureBox
     Friend WithEvents lblVersion As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class
