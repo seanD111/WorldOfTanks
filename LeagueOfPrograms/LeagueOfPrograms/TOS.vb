@@ -11,8 +11,4 @@
         SplashUI.imgLaunchButton.Enabled = True
     End Sub
 
-    Private Sub TOS_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Me.Location = New Point(750, 300)
-    End Sub
-
 End Class

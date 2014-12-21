@@ -132,7 +132,7 @@ Partial Class PlayerProfileUI
         Me.Name = "PlayerProfileUI"
         Me.Padding = New System.Windows.Forms.Padding(9)
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AboutBox1"
         Me.TopMost = True
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
