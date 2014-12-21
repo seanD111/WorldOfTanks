@@ -1,6 +1,6 @@
 ﻿Public Class league
-    Private name As String
-    Private tier As String
-    Private queue As String
-    Private entries As leagueEntry()
+    Public Property name As String
+    Public Property tier As String
+    Public Property queue As String
+    Public Property entries As leagueEntry()
 End Class
