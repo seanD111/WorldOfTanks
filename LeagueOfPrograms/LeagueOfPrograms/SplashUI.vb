@@ -1,4 +1,4 @@
-﻿
+﻿Imports WMPLib
 Public Class SplashUI
 
     Dim drag As Boolean
@@ -17,8 +17,15 @@ Public Class SplashUI
 
     Private Sub imgLaunchButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgLaunchButton.Click
         imgLaunchButton.BackgroundImage = My.Resources.light_launch
-        MainUI.Show()
+
+
+        My.Computer.Audio.Play(My.Resources.buttonclickaudio,
+               AudioPlayMode.BackgroundLoop)
+        System.Threading.Thread.Sleep(900)
+        My.Computer.Audio.Stop()
+   
         Me.Hide()
+        MainUI.Show()
     End Sub
 
     Private Sub imgCloseSplash_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgCloseSplash.Click
@@ -75,6 +82,12 @@ Public Class SplashUI
             imgSplash.BackgroundImage = My.Resources.wallpaper2
             imgSplash.BackgroundImageLayout = ImageLayout.Stretch
         End If
+    End Sub
+
+  
+    Private Sub SplashUI_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        My.Computer.Audio.Play(My.Resources.LoginScreenLoop,
+              AudioPlayMode.BackgroundLoop)
     End Sub
 End Class
 
