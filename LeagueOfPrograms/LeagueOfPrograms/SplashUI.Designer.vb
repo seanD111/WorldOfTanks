@@ -35,6 +35,10 @@ Partial Class SplashUI
         Me.imgSplash = New System.Windows.Forms.PictureBox()
         Me.imgBannerSplash = New System.Windows.Forms.PictureBox()
         Me.cbSplashSelect = New System.Windows.Forms.ComboBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.rtbTOS = New System.Windows.Forms.RichTextBox()
+        Me.imgOK = New System.Windows.Forms.PictureBox()
+        Me.imgBG = New System.Windows.Forms.PictureBox()
         CType(Me.imgRightSide, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgLeftSideBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,6 +47,9 @@ Partial Class SplashUI
         CType(Me.imgLaunchButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgSplash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBannerSplash, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.imgOK, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'timerBGCheck
@@ -157,11 +164,54 @@ Partial Class SplashUI
         Me.cbSplashSelect.TabIndex = 11
         Me.cbSplashSelect.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.rtbTOS)
+        Me.Panel1.Controls.Add(Me.imgOK)
+        Me.Panel1.Controls.Add(Me.imgBG)
+        Me.Panel1.Location = New System.Drawing.Point(430, 102)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(435, 521)
+        Me.Panel1.TabIndex = 12
+        '
+        'rtbTOS
+        '
+        Me.rtbTOS.BackColor = System.Drawing.Color.Black
+        Me.rtbTOS.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtbTOS.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbTOS.ForeColor = System.Drawing.Color.White
+        Me.rtbTOS.Location = New System.Drawing.Point(35, 89)
+        Me.rtbTOS.Name = "rtbTOS"
+        Me.rtbTOS.Size = New System.Drawing.Size(363, 357)
+        Me.rtbTOS.TabIndex = 6
+        Me.rtbTOS.Text = resources.GetString("rtbTOS.Text")
+        '
+        'imgOK
+        '
+        Me.imgOK.BackgroundImage = CType(resources.GetObject("imgOK.BackgroundImage"), System.Drawing.Image)
+        Me.imgOK.Location = New System.Drawing.Point(151, 462)
+        Me.imgOK.Name = "imgOK"
+        Me.imgOK.Size = New System.Drawing.Size(126, 36)
+        Me.imgOK.TabIndex = 5
+        Me.imgOK.TabStop = False
+        '
+        'imgBG
+        '
+        Me.imgBG.BackgroundImage = CType(resources.GetObject("imgBG.BackgroundImage"), System.Drawing.Image)
+        Me.imgBG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.imgBG.Location = New System.Drawing.Point(-18, -6)
+        Me.imgBG.Name = "imgBG"
+        Me.imgBG.Size = New System.Drawing.Size(470, 533)
+        Me.imgBG.TabIndex = 4
+        Me.imgBG.TabStop = False
+        '
         'SplashUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1278, 691)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.cbSplashSelect)
         Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.imgRightSide)
@@ -185,6 +235,9 @@ Partial Class SplashUI
         CType(Me.imgLaunchButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgSplash, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBannerSplash, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.imgOK, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBG, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -200,5 +253,9 @@ Partial Class SplashUI
     Friend WithEvents imgRightSide As System.Windows.Forms.PictureBox
     Friend WithEvents lblVersion As System.Windows.Forms.Label
     Friend WithEvents cbSplashSelect As System.Windows.Forms.ComboBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents rtbTOS As System.Windows.Forms.RichTextBox
+    Friend WithEvents imgOK As System.Windows.Forms.PictureBox
+    Friend WithEvents imgBG As System.Windows.Forms.PictureBox
 
 End Class

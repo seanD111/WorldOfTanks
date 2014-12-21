@@ -73,6 +73,14 @@ Partial Class MainUI
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgGreenButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +96,14 @@ Partial Class MainUI
         CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'timerPing
@@ -583,12 +599,101 @@ Partial Class MainUI
         Me.Label15.TabIndex = 45
         Me.Label15.Text = "Label15"
         '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Controls.Add(Me.PictureBox14)
+        Me.Panel1.Controls.Add(Me.PictureBox15)
+        Me.Panel1.Controls.Add(Me.PictureBox16)
+        Me.Panel1.Controls.Add(Me.PictureBox17)
+        Me.Panel1.Location = New System.Drawing.Point(160, 80)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1108, 572)
+        Me.Panel1.TabIndex = 48
+        Me.Panel1.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(176, 250)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(106, 32)
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(69, 250)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(106, 32)
+        Me.PictureBox2.TabIndex = 14
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Black
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(68, 107)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(964, 124)
+        Me.PictureBox3.TabIndex = 12
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackgroundImage = CType(resources.GetObject("PictureBox14.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox14.Location = New System.Drawing.Point(69, 281)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(665, 219)
+        Me.PictureBox14.TabIndex = 11
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackgroundImage = CType(resources.GetObject("PictureBox15.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox15.Location = New System.Drawing.Point(754, 281)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(278, 219)
+        Me.PictureBox15.TabIndex = 10
+        Me.PictureBox15.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.BackgroundImage = CType(resources.GetObject("PictureBox16.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox16.Location = New System.Drawing.Point(58, 57)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(995, 460)
+        Me.PictureBox16.TabIndex = 13
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox17.Location = New System.Drawing.Point(21, 21)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(1066, 530)
+        Me.PictureBox17.TabIndex = 9
+        Me.PictureBox17.TabStop = False
+        '
         'MainUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1280, 695)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label15)
@@ -656,6 +761,14 @@ Partial Class MainUI
         CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -708,5 +821,13 @@ Partial Class MainUI
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
 
 End Class

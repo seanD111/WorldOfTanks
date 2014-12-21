@@ -114,7 +114,7 @@ Public Class SplashUI
 
 
     Private Sub SplashUI_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        TOS.Show()
+
         My.Computer.Audio.Play(My.Resources.LoginScreenLoop,
               AudioPlayMode.BackgroundLoop)
 
@@ -176,6 +176,10 @@ Public Class SplashUI
     End Sub
 
   
-   
-End Class
 
+
+    Private Sub imgOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgOK.Click
+        imgLaunchButton.Enabled = True
+        Panel1.Visible = False
+    End Sub
+End Class

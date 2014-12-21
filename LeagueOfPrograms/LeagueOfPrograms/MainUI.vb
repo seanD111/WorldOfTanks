@@ -163,7 +163,7 @@ Public NotInheritable Class MainUI
 
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
-        PlayerProfileUI.Show()
+        Panel1.Visible = True
     End Sub
 
 End Class
