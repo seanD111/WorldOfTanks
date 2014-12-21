@@ -70,16 +70,16 @@ Public Class dataFromAPI
     End Function
     Public Function getLeague(ByVal summonerID As String)
         ' original json object from url
-        URL = "https://na.api.pvp.net/api/lol/na/v2.5/league/by-summoner/" & summonerID & "/entry?api_key=" & keys(1)
+        URL = "https://na.api.pvp.net/api/lol/na/v2.5/league/by-summoner/" & summonerID & "/entry?api_key=" & keys(2)
         Dim objWC As New System.Net.WebClient()
         Dim json As String = New System.Text.UTF8Encoding().GetString(objWC.DownloadData(URL))
         ' use this to get summoner object from JSON object
         Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
         ' name of the first item
-        Dim name As String = JsonObject.Properties.First.Name
+        Dim id As String = JsonObject.Properties.First.Name
         ' stupid nested object in json
-        Dim league As league = JsonConvert.DeserializeObject(Of league)(JsonObject.Item(name).ToString())
+        Dim leagues As league() = JsonConvert.DeserializeObject(Of league())(JsonObject.Item(id).ToString())
         ' finally return the summoner object
-        Return league
+        Return leagues
     End Function
 End Class
