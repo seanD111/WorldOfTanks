@@ -160,4 +160,10 @@ Public NotInheritable Class MainUI
         Label10.Text = summoner1.stats(0).aggregatedStats.totalPentaKills
     End Sub
 
+
+
+    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
+        PlayerProfileUI.Show()
+    End Sub
 End Class
+

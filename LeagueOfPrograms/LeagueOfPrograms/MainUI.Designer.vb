@@ -231,11 +231,11 @@ Partial Class MainUI
         Me.lblComingSoon1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon1.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon1.Image = CType(resources.GetObject("lblComingSoon1.Image"), System.Drawing.Image)
-        Me.lblComingSoon1.Location = New System.Drawing.Point(30, 156)
+        Me.lblComingSoon1.Location = New System.Drawing.Point(18, 156)
         Me.lblComingSoon1.Name = "lblComingSoon1"
-        Me.lblComingSoon1.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon1.Size = New System.Drawing.Size(132, 17)
         Me.lblComingSoon1.TabIndex = 17
-        Me.lblComingSoon1.Text = "Coming Soon!"
+        Me.lblComingSoon1.Text = "Summoner Lookup"
         '
         'imgExitButton
         '
