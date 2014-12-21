@@ -92,7 +92,7 @@ Public Class SplashUI
         My.Computer.Audio.Play(My.Resources.LoginScreenLoop,
               AudioPlayMode.BackgroundLoop)
    
-        Process.Start("explorer.exe", GlobalVariables.pathOnly & "\settings.txt")
+
         If My.Computer.FileSystem.FileExists(GlobalVariables.pathOnly & "\settings.txt") Then
             Dim fileReader As String
             fileReader = My.Computer.FileSystem.ReadAllText(GlobalVariables.pathOnly & "\settings.txt")
@@ -149,5 +149,6 @@ Public Class SplashUI
     End Sub
 
 
+  
 End Class
 
