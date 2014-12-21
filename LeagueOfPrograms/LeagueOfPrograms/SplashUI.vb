@@ -175,7 +175,7 @@ Public Class SplashUI
         End If
     End Sub
 
-  
+
 
 
     Private Sub imgOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgOK.Click

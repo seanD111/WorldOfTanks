@@ -102,16 +102,16 @@ Public NotInheritable Class MainUI
     End Sub
 
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Label1.Click
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
 
         Dim summoner1 As New summoner
-        try
+        Try
             summoner1.pullSummonerData(TextBox1.Text)
-        
+
             Label1.Text = summoner1.name
             Label2.Text = summoner1.id
             Label3.Text = summoner1.summonerLevel
@@ -120,7 +120,7 @@ Public NotInheritable Class MainUI
         End Try
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 

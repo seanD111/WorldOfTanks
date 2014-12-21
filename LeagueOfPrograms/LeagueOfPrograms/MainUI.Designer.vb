@@ -757,6 +757,7 @@ Partial Class MainUI
         Me.Controls.Add(Me.imgTopBar)
         Me.Controls.Add(Me.imgBackground)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainUI"
         Me.Padding = New System.Windows.Forms.Padding(9)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
