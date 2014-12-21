@@ -182,4 +182,8 @@ Public Class SplashUI
         imgLaunchButton.Enabled = True
         Panel1.Visible = False
     End Sub
+
+    Private Sub imgBannerSplash_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgBannerSplash.Click
+
+    End Sub
 End Class

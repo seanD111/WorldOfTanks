@@ -81,6 +81,7 @@ Partial Class MainUI
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Label16 = New System.Windows.Forms.Label()
         CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgGreenButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,11 +131,11 @@ Partial Class MainUI
         Me.lblComingSoon10.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon10.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon10.Image = CType(resources.GetObject("lblComingSoon10.Image"), System.Drawing.Image)
-        Me.lblComingSoon10.Location = New System.Drawing.Point(30, 603)
+        Me.lblComingSoon10.Location = New System.Drawing.Point(21, 602)
         Me.lblComingSoon10.Name = "lblComingSoon10"
-        Me.lblComingSoon10.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon10.Size = New System.Drawing.Size(121, 17)
         Me.lblComingSoon10.TabIndex = 26
-        Me.lblComingSoon10.Text = "Coming Soon!"
+        Me.lblComingSoon10.Text = "Official LoL News"
         '
         'lblComingSoon9
         '
@@ -143,11 +144,11 @@ Partial Class MainUI
         Me.lblComingSoon9.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon9.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon9.Image = CType(resources.GetObject("lblComingSoon9.Image"), System.Drawing.Image)
-        Me.lblComingSoon9.Location = New System.Drawing.Point(30, 556)
+        Me.lblComingSoon9.Location = New System.Drawing.Point(26, 555)
         Me.lblComingSoon9.Name = "lblComingSoon9"
-        Me.lblComingSoon9.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon9.Size = New System.Drawing.Size(106, 17)
         Me.lblComingSoon9.TabIndex = 25
-        Me.lblComingSoon9.Text = "Coming Soon!"
+        Me.lblComingSoon9.Text = "Name Checker"
         '
         'lblComingSoon8
         '
@@ -156,11 +157,11 @@ Partial Class MainUI
         Me.lblComingSoon8.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon8.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon8.Image = CType(resources.GetObject("lblComingSoon8.Image"), System.Drawing.Image)
-        Me.lblComingSoon8.Location = New System.Drawing.Point(30, 505)
+        Me.lblComingSoon8.Location = New System.Drawing.Point(18, 505)
         Me.lblComingSoon8.Name = "lblComingSoon8"
-        Me.lblComingSoon8.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon8.Size = New System.Drawing.Size(130, 17)
         Me.lblComingSoon8.TabIndex = 24
-        Me.lblComingSoon8.Text = "Coming Soon!"
+        Me.lblComingSoon8.Text = "Time Spent on LoL"
         '
         'lblComingSoon7
         '
@@ -169,11 +170,11 @@ Partial Class MainUI
         Me.lblComingSoon7.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon7.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon7.Image = CType(resources.GetObject("lblComingSoon7.Image"), System.Drawing.Image)
-        Me.lblComingSoon7.Location = New System.Drawing.Point(30, 457)
+        Me.lblComingSoon7.Location = New System.Drawing.Point(43, 457)
         Me.lblComingSoon7.Name = "lblComingSoon7"
-        Me.lblComingSoon7.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon7.Size = New System.Drawing.Size(68, 17)
         Me.lblComingSoon7.TabIndex = 23
-        Me.lblComingSoon7.Text = "Coming Soon!"
+        Me.lblComingSoon7.Text = "RP To $$"
         '
         'lblComingSoon6
         '
@@ -182,11 +183,11 @@ Partial Class MainUI
         Me.lblComingSoon6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon6.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon6.Image = CType(resources.GetObject("lblComingSoon6.Image"), System.Drawing.Image)
-        Me.lblComingSoon6.Location = New System.Drawing.Point(30, 404)
+        Me.lblComingSoon6.Location = New System.Drawing.Point(27, 404)
         Me.lblComingSoon6.Name = "lblComingSoon6"
-        Me.lblComingSoon6.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon6.Size = New System.Drawing.Size(104, 17)
         Me.lblComingSoon6.TabIndex = 22
-        Me.lblComingSoon6.Text = "Coming Soon!"
+        Me.lblComingSoon6.Text = "Champs/Skins"
         '
         'lblComingSoon5
         '
@@ -195,11 +196,11 @@ Partial Class MainUI
         Me.lblComingSoon5.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon5.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon5.Image = CType(resources.GetObject("lblComingSoon5.Image"), System.Drawing.Image)
-        Me.lblComingSoon5.Location = New System.Drawing.Point(30, 355)
+        Me.lblComingSoon5.Location = New System.Drawing.Point(43, 356)
         Me.lblComingSoon5.Name = "lblComingSoon5"
-        Me.lblComingSoon5.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon5.Size = New System.Drawing.Size(68, 17)
         Me.lblComingSoon5.TabIndex = 21
-        Me.lblComingSoon5.Text = "Coming Soon!"
+        Me.lblComingSoon5.Text = "Counters"
         '
         'lblComingSoon4
         '
@@ -221,11 +222,11 @@ Partial Class MainUI
         Me.lblComingSoon2lblComingSoon3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon2lblComingSoon3.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon2lblComingSoon3.Image = CType(resources.GetObject("lblComingSoon2lblComingSoon3.Image"), System.Drawing.Image)
-        Me.lblComingSoon2lblComingSoon3.Location = New System.Drawing.Point(30, 256)
+        Me.lblComingSoon2lblComingSoon3.Location = New System.Drawing.Point(36, 256)
         Me.lblComingSoon2lblComingSoon3.Name = "lblComingSoon2lblComingSoon3"
-        Me.lblComingSoon2lblComingSoon3.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon2lblComingSoon3.Size = New System.Drawing.Size(85, 17)
         Me.lblComingSoon2lblComingSoon3.TabIndex = 19
-        Me.lblComingSoon2lblComingSoon3.Text = "Coming Soon!"
+        Me.lblComingSoon2lblComingSoon3.Text = "Rune Setup"
         '
         'lblComingSoon2
         '
@@ -234,11 +235,11 @@ Partial Class MainUI
         Me.lblComingSoon2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComingSoon2.ForeColor = System.Drawing.Color.White
         Me.lblComingSoon2.Image = CType(resources.GetObject("lblComingSoon2.Image"), System.Drawing.Image)
-        Me.lblComingSoon2.Location = New System.Drawing.Point(30, 206)
+        Me.lblComingSoon2.Location = New System.Drawing.Point(38, 207)
         Me.lblComingSoon2.Name = "lblComingSoon2"
-        Me.lblComingSoon2.Size = New System.Drawing.Size(102, 17)
+        Me.lblComingSoon2.Size = New System.Drawing.Size(82, 17)
         Me.lblComingSoon2.TabIndex = 18
-        Me.lblComingSoon2.Text = "Coming Soon!"
+        Me.lblComingSoon2.Text = "Best Builds"
         '
         'lblComingSoon1
         '
@@ -401,18 +402,18 @@ Partial Class MainUI
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(354, 206)
+        Me.Button1.Location = New System.Drawing.Point(821, 67)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(351, 239)
+        Me.Label1.Location = New System.Drawing.Point(86, 126)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 28
@@ -420,16 +421,16 @@ Partial Class MainUI
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(354, 180)
+        Me.TextBox1.Location = New System.Drawing.Point(902, 67)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
         Me.TextBox1.TabIndex = 29
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(351, 256)
+        Me.Label2.Location = New System.Drawing.Point(261, 253)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 30
@@ -439,7 +440,7 @@ Partial Class MainUI
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(351, 276)
+        Me.Label3.Location = New System.Drawing.Point(86, 203)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 31
@@ -449,7 +450,7 @@ Partial Class MainUI
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(533, 276)
+        Me.Label4.Location = New System.Drawing.Point(443, 273)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 13)
         Me.Label4.TabIndex = 36
@@ -459,7 +460,7 @@ Partial Class MainUI
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(533, 256)
+        Me.Label5.Location = New System.Drawing.Point(443, 253)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(39, 13)
         Me.Label5.TabIndex = 35
@@ -467,7 +468,7 @@ Partial Class MainUI
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(536, 180)
+        Me.TextBox2.Location = New System.Drawing.Point(446, 177)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 34
@@ -476,7 +477,7 @@ Partial Class MainUI
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(533, 239)
+        Me.Label6.Location = New System.Drawing.Point(443, 236)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 33
@@ -484,7 +485,7 @@ Partial Class MainUI
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(536, 206)
+        Me.Button2.Location = New System.Drawing.Point(446, 203)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 32
@@ -495,7 +496,7 @@ Partial Class MainUI
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(685, 276)
+        Me.Label7.Location = New System.Drawing.Point(381, 72)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(39, 13)
         Me.Label7.TabIndex = 40
@@ -505,7 +506,7 @@ Partial Class MainUI
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(685, 256)
+        Me.Label8.Location = New System.Drawing.Point(443, 67)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(39, 13)
         Me.Label8.TabIndex = 39
@@ -515,7 +516,7 @@ Partial Class MainUI
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(685, 239)
+        Me.Label9.Location = New System.Drawing.Point(320, 70)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(39, 13)
         Me.Label9.TabIndex = 38
@@ -523,7 +524,7 @@ Partial Class MainUI
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(688, 206)
+        Me.Button3.Location = New System.Drawing.Point(225, 67)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 37
@@ -534,7 +535,7 @@ Partial Class MainUI
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(393, 488)
+        Me.Label10.Location = New System.Drawing.Point(303, 485)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(45, 13)
         Me.Label10.TabIndex = 44
@@ -544,7 +545,7 @@ Partial Class MainUI
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(393, 468)
+        Me.Label11.Location = New System.Drawing.Point(303, 465)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(45, 13)
         Me.Label11.TabIndex = 43
@@ -554,7 +555,7 @@ Partial Class MainUI
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(393, 451)
+        Me.Label12.Location = New System.Drawing.Point(303, 448)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(45, 13)
         Me.Label12.TabIndex = 42
@@ -562,7 +563,7 @@ Partial Class MainUI
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(345, 353)
+        Me.Button4.Location = New System.Drawing.Point(255, 350)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 41
@@ -573,7 +574,7 @@ Partial Class MainUI
         '
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(393, 424)
+        Me.Label13.Location = New System.Drawing.Point(303, 421)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(45, 13)
         Me.Label13.TabIndex = 47
@@ -583,7 +584,7 @@ Partial Class MainUI
         '
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(393, 404)
+        Me.Label14.Location = New System.Drawing.Point(303, 401)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(45, 13)
         Me.Label14.TabIndex = 46
@@ -593,7 +594,7 @@ Partial Class MainUI
         '
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(393, 387)
+        Me.Label15.Location = New System.Drawing.Point(303, 384)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(45, 13)
         Me.Label15.TabIndex = 45
@@ -602,14 +603,35 @@ Partial Class MainUI
         'Panel1
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Controls.Add(Me.Label14)
+        Me.Panel1.Controls.Add(Me.Label15)
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.PictureBox14)
         Me.Panel1.Controls.Add(Me.PictureBox15)
         Me.Panel1.Controls.Add(Me.PictureBox16)
         Me.Panel1.Controls.Add(Me.PictureBox17)
-        Me.Panel1.Location = New System.Drawing.Point(160, 80)
+        Me.Panel1.Location = New System.Drawing.Point(171, 80)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1108, 572)
         Me.Panel1.TabIndex = 48
@@ -687,34 +709,27 @@ Partial Class MainUI
         Me.PictureBox17.TabIndex = 9
         Me.PictureBox17.TabStop = False
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Image = CType(resources.GetObject("Label16.Image"), System.Drawing.Image)
+        Me.Label16.Location = New System.Drawing.Point(40, 100)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(71, 34)
+        Me.Label16.TabIndex = 49
+        Me.Label16.Text = " Support" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The Devs"
+        '
         'MainUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1280, 695)
+        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblComingSoon10)
         Me.Controls.Add(Me.lblComingSoon9)
         Me.Controls.Add(Me.lblComingSoon8)
@@ -762,6 +777,7 @@ Partial Class MainUI
         CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -829,5 +845,6 @@ Partial Class MainUI
     Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
 
 End Class

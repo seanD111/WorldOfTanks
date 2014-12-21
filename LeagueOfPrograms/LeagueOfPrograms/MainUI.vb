@@ -166,5 +166,12 @@ Public NotInheritable Class MainUI
         Panel1.Visible = True
     End Sub
 
+    Private Sub imgTopBar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgTopBar.Click
+
+    End Sub
+
+    Private Sub Label16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label16.Click
+
+    End Sub
 End Class
 
