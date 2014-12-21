@@ -99,6 +99,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TOS.Designer.vb">
+      <DependentUpon>TOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PlayerProfileUI.Designer.vb">
       <DependentUpon>PlayerProfileUI.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     <Compile Include="Classes\summoner.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TOS.resx">
+      <DependentUpon>TOS.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PlayerProfileUI.resx">
       <DependentUpon>PlayerProfileUI.vb</DependentUpon>
     </EmbeddedResource>

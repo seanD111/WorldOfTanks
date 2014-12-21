@@ -112,6 +112,7 @@ Partial Class SplashUI
         'imgLaunchButton
         '
         Me.imgLaunchButton.BackgroundImage = CType(resources.GetObject("imgLaunchButton.BackgroundImage"), System.Drawing.Image)
+        Me.imgLaunchButton.Enabled = False
         Me.imgLaunchButton.Location = New System.Drawing.Point(561, 7)
         Me.imgLaunchButton.Name = "imgLaunchButton"
         Me.imgLaunchButton.Size = New System.Drawing.Size(150, 50)
