@@ -180,7 +180,7 @@ Public Class SplashUI
         imgLaunchButton.Enabled = True
         Panel1.Visible = False
         Dim web As New HtmlAgilityPack.HtmlWeb
-        Dim doc As HtmlAgilityPack.HtmlDocument = web.Load("http://www.pr.jbi.in/rank/www.facebook.com")
+        Dim doc As HtmlAgilityPack.HtmlDocument = web.Load("http://www.mobafire.com/league-of-legends/ahri-guide")
         Dim tables As HtmlAgilityPack.HtmlNodeCollection = doc.DocumentNode.SelectNodes("//TABLE")
 
         ' Iterate all rows in the first table
