@@ -70,31 +70,31 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property dark_launch() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("dark_launch", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property light_launch() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("light_launch", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
         Friend ReadOnly Property LoginScreenLoop() As System.IO.UnmanagedMemoryStream
             Get
                 Return ResourceManager.GetStream("LoginScreenLoop", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property lol() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lol", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property lol2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lol2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         

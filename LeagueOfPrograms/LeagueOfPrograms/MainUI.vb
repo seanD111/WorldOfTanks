@@ -80,24 +80,6 @@ Public NotInheritable Class MainUI
         drag = False
     End Sub
 
-
-    Private Sub PictureBox4_MouseClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles PictureBox4.MouseClick
-        PictureBox4.BackgroundImage = My.Resources.pressedbutton
-        lblComingSoon1.Image = My.Resources.pressedbutton
-
-    End Sub
-
-
-    Private Sub lblComingSoon1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblComingSoon1.MouseClick
-        PictureBox4.BackgroundImage = My.Resources.pressedbutton
-        lblComingSoon1.Image = My.Resources.pressedbutton
-    End Sub
-
-    Private Sub PictureBox4_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox4.MouseClick
-
-    End Sub
-
-
     Private Sub Label1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Label1.Click
 
     End Sub
@@ -158,7 +140,7 @@ Public NotInheritable Class MainUI
 
 
 
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
+    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Panel1.Visible = True
     End Sub
 
@@ -166,12 +148,18 @@ Public NotInheritable Class MainUI
 
     End Sub
 
-    Private Sub Label16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label16.Click
+    Private Sub Label16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
     Private Sub PictureBox18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox18.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+  
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        Panel1.Visible = True
+        Button5.BackgroundImage = My.Resources.pressedbutton
     End Sub
 End Class
 

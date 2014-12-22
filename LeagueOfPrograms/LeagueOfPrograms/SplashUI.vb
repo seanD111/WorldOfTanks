@@ -18,17 +18,17 @@ Public Class SplashUI
     End Class
 
     Private Sub imgLaunchButton_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles imgLaunchButton.MouseHover
-        imgLaunchButton.BackgroundImage = My.Resources.light_launch
+        imgLaunchButton.BackgroundImage = My.Resources.lol2
 
     End Sub
 
 
     Private Sub imgLaunchButton_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles imgLaunchButton.MouseLeave
-        imgLaunchButton.BackgroundImage = My.Resources.dark_launch
+        imgLaunchButton.BackgroundImage = My.Resources.lol
     End Sub
 
     Private Sub imgLaunchButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgLaunchButton.Click
-        imgLaunchButton.BackgroundImage = My.Resources.light_launch
+        imgLaunchButton.BackgroundImage = My.Resources.lol2
 
 
         My.Computer.Audio.Play(My.Resources.buttonclickaudio,
@@ -181,7 +181,6 @@ Public Class SplashUI
         Panel1.Visible = False
     End Sub
 
-    Private Sub imgBannerSplash_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgBannerSplash.Click
+ 
 
-    End Sub
 End Class

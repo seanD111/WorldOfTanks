@@ -181,6 +181,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="league_of_legends_dock_icon_v2_by_kaldrax-d53pwe8.ico" />
+    <None Include="Resources\lol2.png" />
+    <None Include="Resources\lol.png" />
+    <None Include="Resources\1orange.png" />
     <None Include="Resources\LoginScreenLoop.wav" />
     <None Include="Resources\lockinchampion.wav" />
     <None Include="Resources\cs_bg_champions.png" />
