@@ -49,14 +49,9 @@ Public Class dataFromAPI
         ' use this to get summoner object from JSON object
         Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
         ' name of the first item
-        Dim id As IList(Of String) = TheJObject.Properties().Select(Function(p) p.Name).ToList();
+        Dim id As String = JsonObject.Properties.First.Name
         ' stupid nested object in json
-        Dim runes As runePage()
-
-        Dim count = id.count
-        For i As Integer = 0 To id.count()
-            runes(i) = JsonConvert.DeserializeObject(Of runePage())(JsonObject.Item(id.Item(i)).Item("pages").ToString())
-        Next
+        Dim runes As runePage() = JsonConvert.DeserializeObject(Of runePage())(JsonObject.Item(id).Item("pages").ToString())
 
         ' finally return the summoner object
 
