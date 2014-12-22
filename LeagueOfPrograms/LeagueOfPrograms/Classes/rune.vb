@@ -79,9 +79,7 @@ Public Class Rune2
     Public Property type As String
 End Class
 
-Public Class Basic
 
-End Class
 
 Public Class rune
     Public Property tags As String()

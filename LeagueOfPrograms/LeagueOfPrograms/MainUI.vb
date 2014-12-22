@@ -113,7 +113,7 @@ Public NotInheritable Class MainUI
         Label5.Text = summoner1.masterySet(0).masteries(0).id
         Label4.Text = summoner1.masterySet(0).masteries(0).rank
         summoner1.masterySet(0).updateImages()
-        PictureBox4.Image = summoner1.masterySet(0).masteries(0).masteryPic
+        'PictureBox4.Image = summoner1.masterySet(0).masteries(0).masteryPic
 
     End Sub
 
