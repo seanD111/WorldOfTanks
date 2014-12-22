@@ -4,4 +4,10 @@
     Public Property name As String
     Public Property current As Boolean
     Public Property slots As rune()
+    Public Sub updateImages()
+        For i As Integer = 0 To slots.Length - 1
+            slots(i).runePic = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData("http://ddragon.leagueoflegends.com/cdn/4.20.1/img/rune/" & slots(i).runeId & ".png")))
+        Next
+
+    End Sub
 End Class

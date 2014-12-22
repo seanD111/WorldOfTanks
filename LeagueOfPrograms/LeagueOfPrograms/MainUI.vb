@@ -112,6 +112,8 @@ Public NotInheritable Class MainUI
         Label6.Text = summoner1.masterySet(0).name
         Label5.Text = summoner1.masterySet(0).masteries(0).id
         Label4.Text = summoner1.masterySet(0).masteries(0).rank
+        summoner1.masterySet(0).updateImages()
+        PictureBox4.Image = summoner1.masterySet(0).masteries(0).masteryPic
 
     End Sub
 
@@ -144,13 +146,6 @@ Public NotInheritable Class MainUI
         Panel1.Visible = True
     End Sub
 
-    Private Sub imgTopBar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgTopBar.Click
-
-    End Sub
-
-    Private Sub Label16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
 
     Private Sub PictureBox18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox18.Click
         Me.WindowState = FormWindowState.Minimized
