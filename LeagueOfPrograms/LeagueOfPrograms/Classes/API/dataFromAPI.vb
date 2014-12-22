@@ -53,6 +53,9 @@ Public Class dataFromAPI
         ' stupid nested object in json
         Dim runes As runePage() = JsonConvert.DeserializeObject(Of runePage())(JsonObject.Item(id).Item("pages").ToString())
         ' finally return the summoner object
+
+
+
         Return runes
     End Function
     Public Function getStats(ByVal summonerID As String)
