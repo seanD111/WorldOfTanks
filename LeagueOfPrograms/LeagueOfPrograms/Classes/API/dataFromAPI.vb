@@ -8,7 +8,7 @@ Public Class dataFromAPI
     Sub New()
         ReDim keys(3)
         keys(0) = "e5547c49-b045-4e3b-a486-63d69fefacdf"
-        keys(1) = "ce57ec7f-3d6f-4481-89bc-c83e3310ab7d"
+        keys(1) = "479c1f0e-396e-41d0-9f04-d178279aaccf"
         keys(2) = "a98f0029-9ce3-496e-b2ad-8f351ffe6678"
     End Sub
 
@@ -49,9 +49,15 @@ Public Class dataFromAPI
         ' use this to get summoner object from JSON object
         Dim JsonObject As JObject = JsonConvert.DeserializeObject(Of JObject)(json)
         ' name of the first item
-        Dim id As String = JsonObject.Properties.First.Name
+        Dim id As IList(Of String) = TheJObject.Properties().Select(Function(p) p.Name).ToList();
         ' stupid nested object in json
-        Dim runes As runePage() = JsonConvert.DeserializeObject(Of runePage())(JsonObject.Item(id).Item("pages").ToString())
+        Dim runes As runePage()
+
+        Dim count = id.count
+        For i As Integer = 0 To id.count()
+            runes(i) = JsonConvert.DeserializeObject(Of runePage())(JsonObject.Item(id.Item(i)).Item("pages").ToString())
+        Next
+
         ' finally return the summoner object
 
 
