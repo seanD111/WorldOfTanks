@@ -39,7 +39,6 @@ Partial Class SplashUI
         Me.imgLaunchButton = New System.Windows.Forms.PictureBox()
         Me.imgSplash = New System.Windows.Forms.PictureBox()
         Me.imgBannerSplash = New System.Windows.Forms.PictureBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Panel1.SuspendLayout()
         CType(Me.imgOK, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBG, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -209,20 +208,11 @@ Partial Class SplashUI
         Me.imgBannerSplash.TabIndex = 0
         Me.imgBannerSplash.TabStop = False
         '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(995, 293)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox1.TabIndex = 13
-        '
         'SplashUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1278, 691)
-        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.cbSplashSelect)
         Me.Controls.Add(Me.lblVersion)
@@ -269,6 +259,5 @@ Partial Class SplashUI
     Friend WithEvents rtbTOS As System.Windows.Forms.RichTextBox
     Friend WithEvents imgOK As System.Windows.Forms.PictureBox
     Friend WithEvents imgBG As System.Windows.Forms.PictureBox
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
 
 End Class
