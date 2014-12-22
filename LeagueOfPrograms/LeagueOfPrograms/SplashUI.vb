@@ -2,6 +2,7 @@
 Imports System.IO
 Imports System.Text
 'Imports System.Net  => Used for update system, see below
+Imports HtmlAgilityPack
 
 
 Public Class SplashUI
@@ -179,8 +180,37 @@ Public Class SplashUI
     Private Sub imgOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgOK.Click
         imgLaunchButton.Enabled = True
         Panel1.Visible = False
+        ' Load the html document
+        Dim web As New HtmlWeb()
+        Dim doc As HtmlDocument = web.Load("http://www.mobafire.com/league-of-legends/ahri-guide")
+
+        ' Get all tables in the document
+        Dim tables As HtmlNodeCollection = doc.DocumentNode.SelectNodes("//table")
+
+        ' Iterate all rows in the first table
+        Dim rows As HtmlNodeCollection = tables(0).SelectNodes(".//tr")
+        For i As Integer = 0 To rows.Count - 1
+
+            ' Iterate all columns in this row
+            Dim cols As HtmlNodeCollection = rows(i).SelectNodes(".//td")
+            For j As Integer = 0 To cols.Count - 1
+
+                ' Get the value of the column and print it
+                Dim value As String = cols(j).InnerText
+                MsgBox(value)
+            Next
+        Next
+
     End Sub
 
  
 
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+
+    End Sub
 End Class
