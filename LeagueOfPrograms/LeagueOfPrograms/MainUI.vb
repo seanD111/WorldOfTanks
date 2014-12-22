@@ -1,6 +1,5 @@
 ﻿Imports System.Net.NetworkInformation
 Imports Newtonsoft.Json.Linq
-Imports HtmlAgilityPack
 
 Public NotInheritable Class MainUI
 
@@ -159,6 +158,5 @@ Public NotInheritable Class MainUI
         Panel1.Visible = True
         Button5.BackgroundImage = My.Resources.pressedbutton
     End Sub
-
 End Class
 
