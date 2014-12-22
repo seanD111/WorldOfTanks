@@ -2,7 +2,7 @@
 Imports System.IO
 Imports System.Text
 'Imports System.Net  => Used for update system, see below
-
+Imports HtmlAgilityPack
 
 Public Class SplashUI
 
@@ -179,6 +179,23 @@ Public Class SplashUI
     Private Sub imgOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgOK.Click
         imgLaunchButton.Enabled = True
         Panel1.Visible = False
+        Dim web As New HtmlAgilityPack.HtmlWeb
+        Dim doc As HtmlAgilityPack.HtmlDocument = web.Load("http://www.pr.jbi.in/rank/www.facebook.com")
+        Dim tables As HtmlAgilityPack.HtmlNodeCollection = doc.DocumentNode.SelectNodes("//TABLE")
+
+        ' Iterate all rows in the first table
+        Dim rows As HtmlAgilityPack.HtmlNodeCollection = tables(0).SelectNodes("//TR")
+        For i As Integer = 0 To rows.Count - 1
+
+            ' Iterate all columns in this row
+            Dim cols As HtmlAgilityPack.HtmlNodeCollection = rows(i).SelectNodes(".//TD")
+            For j As Integer = 0 To cols.Count - 1
+
+                ' Get the value of the column and print it
+                Dim value As String = cols(j).InnerText
+                ListBox1.Items.Add(value)
+            Next
+        Next
     End Sub
 
  
