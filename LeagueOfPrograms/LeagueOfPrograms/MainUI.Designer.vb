@@ -40,6 +40,7 @@ Partial Class MainUI
         Me.Button5 = New System.Windows.Forms.Button()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -73,9 +74,9 @@ Partial Class MainUI
         Me.imgBottomBar = New System.Windows.Forms.PictureBox()
         Me.imgTopBar = New System.Windows.Forms.PictureBox()
         Me.imgBackground = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,7 +89,6 @@ Partial Class MainUI
         CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'timerPing
@@ -298,6 +298,14 @@ Partial Class MainUI
         Me.Panel1.Size = New System.Drawing.Size(1108, 572)
         Me.Panel1.TabIndex = 48
         Me.Panel1.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Location = New System.Drawing.Point(306, 98)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(79, 68)
+        Me.PictureBox5.TabIndex = 49
+        Me.PictureBox5.TabStop = False
         '
         'PictureBox4
         '
@@ -616,14 +624,6 @@ Partial Class MainUI
         Me.imgBackground.TabIndex = 2
         Me.imgBackground.TabStop = False
         '
-        'PictureBox5
-        '
-        Me.PictureBox5.Location = New System.Drawing.Point(306, 98)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(79, 68)
-        Me.PictureBox5.TabIndex = 49
-        Me.PictureBox5.TabStop = False
-        '
         'MainUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -657,6 +657,7 @@ Partial Class MainUI
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -669,7 +670,6 @@ Partial Class MainUI
         CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
