@@ -5,7 +5,7 @@
     Public Property masteries As mastery()
     Public Sub updateImages()
         For i As Integer = 0 To masteries.Length - 1
-            masteries(i).masteryPic = New System.Drawing.Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData("http://ddragon.leagueoflegends.com/cdn/4.20.1/img/mastery/" & masteries(i).id & ".png")))
+            masteries(i).masteryPic = CType(My.Resources.ResourceManager.GetObject("_" & masteries(i).id, My.Resources.Culture()), System.Drawing.Bitmap)
         Next
 
     End Sub

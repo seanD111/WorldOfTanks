@@ -125,6 +125,8 @@ Public NotInheritable Class MainUI
         Label9.Text = summoner1.runeSet(0).name
         Label8.Text = summoner1.runeSet(0).slots(0).runeId
         Label7.Text = summoner1.runeSet(0).slots(0).runeSlotId
+        summoner1.runeSet(0).updateImages()
+        PictureBox5.Image = summoner1.runeSet(0).slots(0).runePic
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click

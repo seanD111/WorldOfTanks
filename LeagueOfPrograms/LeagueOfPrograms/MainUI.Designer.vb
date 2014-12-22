@@ -27,57 +27,56 @@ Partial Class MainUI
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainUI))
         Me.timerPing = New System.Windows.Forms.Timer(Me.components)
         Me.lblping = New System.Windows.Forms.Label()
-        Me.imgExitButton = New System.Windows.Forms.PictureBox()
-        Me.imgBottomBar = New System.Windows.Forms.PictureBox()
-        Me.imgTopBar = New System.Windows.Forms.PictureBox()
-        Me.imgBackground = New System.Windows.Forms.PictureBox()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.imgExitButton = New System.Windows.Forms.PictureBox()
+        Me.imgBottomBar = New System.Windows.Forms.PictureBox()
+        Me.imgTopBar = New System.Windows.Forms.PictureBox()
+        Me.imgBackground = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,8 +84,11 @@ Partial Class MainUI
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'timerPing
@@ -106,41 +108,250 @@ Partial Class MainUI
         Me.lblping.TabIndex = 1
         Me.lblping.Text = "Connecting..."
         '
-        'imgExitButton
+        'Button15
         '
-        Me.imgExitButton.BackgroundImage = CType(resources.GetObject("imgExitButton.BackgroundImage"), System.Drawing.Image)
-        Me.imgExitButton.Location = New System.Drawing.Point(1250, 0)
-        Me.imgExitButton.Name = "imgExitButton"
-        Me.imgExitButton.Size = New System.Drawing.Size(29, 23)
-        Me.imgExitButton.TabIndex = 16
-        Me.imgExitButton.TabStop = False
+        Me.Button15.BackgroundImage = CType(resources.GetObject("Button15.BackgroundImage"), System.Drawing.Image)
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.ForeColor = System.Drawing.Color.White
+        Me.Button15.Location = New System.Drawing.Point(11, 102)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(143, 48)
+        Me.Button15.TabIndex = 59
+        Me.Button15.Text = " Support" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The Devs"
+        Me.Button15.UseVisualStyleBackColor = True
         '
-        'imgBottomBar
+        'Button14
         '
-        Me.imgBottomBar.BackgroundImage = CType(resources.GetObject("imgBottomBar.BackgroundImage"), System.Drawing.Image)
-        Me.imgBottomBar.Location = New System.Drawing.Point(-1, 658)
-        Me.imgBottomBar.Name = "imgBottomBar"
-        Me.imgBottomBar.Size = New System.Drawing.Size(1282, 36)
-        Me.imgBottomBar.TabIndex = 4
-        Me.imgBottomBar.TabStop = False
+        Me.Button14.BackgroundImage = CType(resources.GetObject("Button14.BackgroundImage"), System.Drawing.Image)
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.ForeColor = System.Drawing.Color.White
+        Me.Button14.Location = New System.Drawing.Point(12, 485)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(143, 48)
+        Me.Button14.TabIndex = 58
+        Me.Button14.Text = "Time Spent on LoL"
+        Me.Button14.UseVisualStyleBackColor = True
         '
-        'imgTopBar
+        'Button13
         '
-        Me.imgTopBar.BackgroundImage = CType(resources.GetObject("imgTopBar.BackgroundImage"), System.Drawing.Image)
-        Me.imgTopBar.Location = New System.Drawing.Point(0, 0)
-        Me.imgTopBar.Name = "imgTopBar"
-        Me.imgTopBar.Size = New System.Drawing.Size(1281, 74)
-        Me.imgTopBar.TabIndex = 3
-        Me.imgTopBar.TabStop = False
+        Me.Button13.BackgroundImage = CType(resources.GetObject("Button13.BackgroundImage"), System.Drawing.Image)
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.ForeColor = System.Drawing.Color.White
+        Me.Button13.Location = New System.Drawing.Point(12, 533)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(143, 48)
+        Me.Button13.TabIndex = 57
+        Me.Button13.Text = "Name Checker"
+        Me.Button13.UseVisualStyleBackColor = True
         '
-        'imgBackground
+        'Button12
         '
-        Me.imgBackground.BackgroundImage = CType(resources.GetObject("imgBackground.BackgroundImage"), System.Drawing.Image)
-        Me.imgBackground.Location = New System.Drawing.Point(12, 48)
-        Me.imgBackground.Name = "imgBackground"
-        Me.imgBackground.Size = New System.Drawing.Size(1288, 626)
-        Me.imgBackground.TabIndex = 2
-        Me.imgBackground.TabStop = False
+        Me.Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), System.Drawing.Image)
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.ForeColor = System.Drawing.Color.White
+        Me.Button12.Location = New System.Drawing.Point(12, 581)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(143, 48)
+        Me.Button12.TabIndex = 56
+        Me.Button12.Text = "Official LoL News"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), System.Drawing.Image)
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.ForeColor = System.Drawing.Color.White
+        Me.Button11.Location = New System.Drawing.Point(12, 438)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(143, 48)
+        Me.Button11.TabIndex = 53
+        Me.Button11.Text = "RP To $$"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), System.Drawing.Image)
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.ForeColor = System.Drawing.Color.White
+        Me.Button10.Location = New System.Drawing.Point(12, 391)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(143, 48)
+        Me.Button10.TabIndex = 55
+        Me.Button10.Text = "Champs/Skins"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.ForeColor = System.Drawing.Color.White
+        Me.Button9.Location = New System.Drawing.Point(12, 344)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(143, 48)
+        Me.Button9.TabIndex = 54
+        Me.Button9.Text = "Counters"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.White
+        Me.Button8.Location = New System.Drawing.Point(12, 296)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(143, 48)
+        Me.Button8.TabIndex = 53
+        Me.Button8.Text = "Coming Soon!"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.White
+        Me.Button7.Location = New System.Drawing.Point(11, 248)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(143, 48)
+        Me.Button7.TabIndex = 52
+        Me.Button7.Text = "Rune Setup"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(12, 199)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(143, 48)
+        Me.Button6.TabIndex = 51
+        Me.Button6.Text = "Best Builds"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(12, 151)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(143, 48)
+        Me.Button5.TabIndex = 48
+        Me.Button5.Text = "Summoner Lookup"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.BackgroundImage = CType(resources.GetObject("PictureBox18.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox18.Location = New System.Drawing.Point(1223, 0)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(29, 23)
+        Me.PictureBox18.TabIndex = 50
+        Me.PictureBox18.TabStop = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.PictureBox5)
+        Me.Panel1.Controls.Add(Me.PictureBox4)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Label13)
+        Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Controls.Add(Me.Label14)
+        Me.Panel1.Controls.Add(Me.Label15)
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Controls.Add(Me.PictureBox14)
+        Me.Panel1.Controls.Add(Me.PictureBox15)
+        Me.Panel1.Controls.Add(Me.PictureBox16)
+        Me.Panel1.Controls.Add(Me.PictureBox17)
+        Me.Panel1.Location = New System.Drawing.Point(165, 81)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1108, 572)
+        Me.Panel1.TabIndex = 48
+        Me.Panel1.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Location = New System.Drawing.Point(552, 181)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(79, 68)
+        Me.PictureBox4.TabIndex = 48
+        Me.PictureBox4.TabStop = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(443, 67)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(39, 13)
+        Me.Label8.TabIndex = 39
+        Me.Label8.Text = "Label8"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(443, 91)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(39, 13)
+        Me.Label7.TabIndex = 40
+        Me.Label7.Text = "Label7"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(309, 41)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(39, 13)
+        Me.Label9.TabIndex = 38
+        Me.Label9.Text = "Label9"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(225, 67)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 37
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(902, 67)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox1.TabIndex = 29
         '
         'Button1
         '
@@ -161,13 +372,6 @@ Partial Class MainUI
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Label1"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(902, 67)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
-        Me.TextBox1.TabIndex = 29
         '
         'Label2
         '
@@ -209,13 +413,6 @@ Partial Class MainUI
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "Label5"
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(446, 177)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 34
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -226,6 +423,13 @@ Partial Class MainUI
         Me.Label6.TabIndex = 33
         Me.Label6.Text = "Label6"
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(446, 177)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 34
+        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(446, 203)
@@ -235,44 +439,55 @@ Partial Class MainUI
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label7
+        'PictureBox1
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(381, 72)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(39, 13)
-        Me.Label7.TabIndex = 40
-        Me.Label7.Text = "Label7"
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(176, 250)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(106, 32)
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
         '
-        'Label8
+        'Label13
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(443, 67)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
-        Me.Label8.TabIndex = 39
-        Me.Label8.Text = "Label8"
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(303, 421)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(45, 13)
+        Me.Label13.TabIndex = 47
+        Me.Label13.Text = "Label13"
         '
-        'Label9
+        'PictureBox2
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(320, 70)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 13)
-        Me.Label9.TabIndex = 38
-        Me.Label9.Text = "Label9"
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(69, 250)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(106, 32)
+        Me.PictureBox2.TabIndex = 14
+        Me.PictureBox2.TabStop = False
         '
-        'Button3
+        'Label14
         '
-        Me.Button3.Location = New System.Drawing.Point(225, 67)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 37
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(303, 401)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(45, 13)
+        Me.Label14.TabIndex = 46
+        Me.Label14.Text = "Label14"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(303, 384)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(45, 13)
+        Me.Label15.TabIndex = 45
+        Me.Label15.Text = "Label15"
         '
         'Label10
         '
@@ -312,94 +527,6 @@ Partial Class MainUI
         Me.Button4.TabIndex = 41
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(303, 421)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(45, 13)
-        Me.Label13.TabIndex = 47
-        Me.Label13.Text = "Label13"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(303, 401)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(45, 13)
-        Me.Label14.TabIndex = 46
-        Me.Label14.Text = "Label14"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(303, 384)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(45, 13)
-        Me.Label15.TabIndex = 45
-        Me.Label15.Text = "Label15"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox14)
-        Me.Panel1.Controls.Add(Me.PictureBox15)
-        Me.Panel1.Controls.Add(Me.PictureBox16)
-        Me.Panel1.Controls.Add(Me.PictureBox17)
-        Me.Panel1.Location = New System.Drawing.Point(165, 81)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1108, 572)
-        Me.Panel1.TabIndex = 48
-        Me.Panel1.Visible = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(176, 250)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(106, 32)
-        Me.PictureBox1.TabIndex = 15
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(69, 250)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(106, 32)
-        Me.PictureBox2.TabIndex = 14
-        Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
@@ -453,165 +580,49 @@ Partial Class MainUI
         Me.PictureBox17.TabIndex = 9
         Me.PictureBox17.TabStop = False
         '
-        'PictureBox18
+        'imgExitButton
         '
-        Me.PictureBox18.BackgroundImage = CType(resources.GetObject("PictureBox18.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox18.Location = New System.Drawing.Point(1223, 0)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(29, 23)
-        Me.PictureBox18.TabIndex = 50
-        Me.PictureBox18.TabStop = False
+        Me.imgExitButton.BackgroundImage = CType(resources.GetObject("imgExitButton.BackgroundImage"), System.Drawing.Image)
+        Me.imgExitButton.Location = New System.Drawing.Point(1250, 0)
+        Me.imgExitButton.Name = "imgExitButton"
+        Me.imgExitButton.Size = New System.Drawing.Size(29, 23)
+        Me.imgExitButton.TabIndex = 16
+        Me.imgExitButton.TabStop = False
         '
-        'Button5
+        'imgBottomBar
         '
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(12, 151)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(143, 48)
-        Me.Button5.TabIndex = 48
-        Me.Button5.Text = "Summoner Lookup"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.imgBottomBar.BackgroundImage = CType(resources.GetObject("imgBottomBar.BackgroundImage"), System.Drawing.Image)
+        Me.imgBottomBar.Location = New System.Drawing.Point(-1, 658)
+        Me.imgBottomBar.Name = "imgBottomBar"
+        Me.imgBottomBar.Size = New System.Drawing.Size(1282, 36)
+        Me.imgBottomBar.TabIndex = 4
+        Me.imgBottomBar.TabStop = False
         '
-        'Button6
+        'imgTopBar
         '
-        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(12, 199)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(143, 48)
-        Me.Button6.TabIndex = 51
-        Me.Button6.Text = "Best Builds"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.imgTopBar.BackgroundImage = CType(resources.GetObject("imgTopBar.BackgroundImage"), System.Drawing.Image)
+        Me.imgTopBar.Location = New System.Drawing.Point(0, 0)
+        Me.imgTopBar.Name = "imgTopBar"
+        Me.imgTopBar.Size = New System.Drawing.Size(1281, 74)
+        Me.imgTopBar.TabIndex = 3
+        Me.imgTopBar.TabStop = False
         '
-        'Button7
+        'imgBackground
         '
-        Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(11, 248)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(143, 48)
-        Me.Button7.TabIndex = 52
-        Me.Button7.Text = "Rune Setup"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.imgBackground.BackgroundImage = CType(resources.GetObject("imgBackground.BackgroundImage"), System.Drawing.Image)
+        Me.imgBackground.Location = New System.Drawing.Point(12, 48)
+        Me.imgBackground.Name = "imgBackground"
+        Me.imgBackground.Size = New System.Drawing.Size(1288, 626)
+        Me.imgBackground.TabIndex = 2
+        Me.imgBackground.TabStop = False
         '
-        'Button8
+        'PictureBox5
         '
-        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Location = New System.Drawing.Point(12, 296)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(143, 48)
-        Me.Button8.TabIndex = 53
-        Me.Button8.Text = "Coming Soon!"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.ForeColor = System.Drawing.Color.White
-        Me.Button9.Location = New System.Drawing.Point(12, 344)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(143, 48)
-        Me.Button9.TabIndex = 54
-        Me.Button9.Text = "Counters"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), System.Drawing.Image)
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.ForeColor = System.Drawing.Color.White
-        Me.Button10.Location = New System.Drawing.Point(12, 391)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(143, 48)
-        Me.Button10.TabIndex = 55
-        Me.Button10.Text = "Champs/Skins"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), System.Drawing.Image)
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.ForeColor = System.Drawing.Color.White
-        Me.Button11.Location = New System.Drawing.Point(12, 438)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(143, 48)
-        Me.Button11.TabIndex = 53
-        Me.Button11.Text = "RP To $$"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), System.Drawing.Image)
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.ForeColor = System.Drawing.Color.White
-        Me.Button12.Location = New System.Drawing.Point(12, 581)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(143, 48)
-        Me.Button12.TabIndex = 56
-        Me.Button12.Text = "Official LoL News"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button13
-        '
-        Me.Button13.BackgroundImage = CType(resources.GetObject("Button13.BackgroundImage"), System.Drawing.Image)
-        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.ForeColor = System.Drawing.Color.White
-        Me.Button13.Location = New System.Drawing.Point(12, 533)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(143, 48)
-        Me.Button13.TabIndex = 57
-        Me.Button13.Text = "Name Checker"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button14
-        '
-        Me.Button14.BackgroundImage = CType(resources.GetObject("Button14.BackgroundImage"), System.Drawing.Image)
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.ForeColor = System.Drawing.Color.White
-        Me.Button14.Location = New System.Drawing.Point(12, 485)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(143, 48)
-        Me.Button14.TabIndex = 58
-        Me.Button14.Text = "Time Spent on LoL"
-        Me.Button14.UseVisualStyleBackColor = True
-        '
-        'Button15
-        '
-        Me.Button15.BackgroundImage = CType(resources.GetObject("Button15.BackgroundImage"), System.Drawing.Image)
-        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.ForeColor = System.Drawing.Color.White
-        Me.Button15.Location = New System.Drawing.Point(11, 102)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(143, 48)
-        Me.Button15.TabIndex = 59
-        Me.Button15.Text = " Support" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The Devs"
-        Me.Button15.UseVisualStyleBackColor = True
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Location = New System.Drawing.Point(552, 181)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(79, 68)
-        Me.PictureBox4.TabIndex = 48
-        Me.PictureBox4.TabStop = False
+        Me.PictureBox5.Location = New System.Drawing.Point(306, 98)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(79, 68)
+        Me.PictureBox5.TabIndex = 49
+        Me.PictureBox5.TabStop = False
         '
         'MainUI
         '
@@ -643,12 +654,10 @@ Partial Class MainUI
         Me.Padding = New System.Windows.Forms.Padding(9)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AboutBox1"
-        CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -656,8 +665,11 @@ Partial Class MainUI
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgExitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBottomBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgTopBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBackground, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -710,5 +722,6 @@ Partial Class MainUI
     Friend WithEvents Button14 As System.Windows.Forms.Button
     Friend WithEvents Button15 As System.Windows.Forms.Button
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
 
 End Class
