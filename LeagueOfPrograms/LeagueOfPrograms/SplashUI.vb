@@ -186,7 +186,6 @@ Public Class SplashUI
 
         ' Get all tables in the document
         Dim tables As HtmlNodeCollection = doc.DocumentNode.SelectNodes("//table")
-
         ' Iterate all rows in the first table
         Dim rows As HtmlNodeCollection = tables(0).SelectNodes(".//tr")
         For i As Integer = 0 To rows.Count - 1
@@ -196,8 +195,8 @@ Public Class SplashUI
             For j As Integer = 0 To cols.Count - 1
 
                 ' Get the value of the column and print it
-                Dim value As String = cols(j).InnerText
-                MsgBox(value)
+                Dim value As String = cols(j).InnerHtml
+                Debug.WriteLine(value)
             Next
         Next
 
