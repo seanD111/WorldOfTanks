@@ -181,6 +181,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="league_of_legends_dock_icon_v2_by_kaldrax-d53pwe8.ico" />
+    <None Include="Resources\staticMasteryData.txt" />
+    <None Include="Resources\staticRuneData.txt" />
     <None Include="Resources\yellow_i7.png" />
     <None Include="Resources\yellow_i5.png" />
     <None Include="Resources\yellow_i3.png" />

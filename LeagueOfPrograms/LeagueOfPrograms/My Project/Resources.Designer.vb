@@ -839,6 +839,24 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to {&quot;type&quot;:&quot;mastery&quot;,&quot;version&quot;:&quot;4.17.1&quot;,&quot;data&quot;:{&quot;4353&quot;:{&quot;id&quot;:4353,&quot;name&quot;:&quot;Intelligence&quot;,&quot;description&quot;:[&quot;+2% Cooldown Reduction and reduces the cooldown of Activated Items by 4%&quot;,&quot;+3.5% Cooldown Reduction and reduces the cooldown of Activated Items by 7%&quot;,&quot;+5% Cooldown Reduction and reduces the cooldown of Activated Items by 10%&quot;],&quot;sanitizedDescription&quot;:[&quot;+2% Cooldown Reduction and reduces the cooldown of Activated Items by 4%&quot;,&quot;+3.5% Cooldown Reduction and reduces the cooldown of Activated Items by 7%&quot;,&quot;+5% Co [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property staticMasteryData() As String
+            Get
+                Return ResourceManager.GetString("staticMasteryData", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to {&quot;type&quot;:&quot;rune&quot;,&quot;version&quot;:&quot;4.17.1&quot;,&quot;data&quot;:{&quot;5235&quot;:{&quot;id&quot;:5235,&quot;name&quot;:&quot;Quintessence of Ability Power&quot;,&quot;description&quot;:&quot;+3.85 ability power&quot;,&quot;sanitizedDescription&quot;:&quot;+3.85 ability power&quot;,&quot;tags&quot;:[&quot;magic&quot;,&quot;flat&quot;,&quot;quintessence&quot;],&quot;image&quot;:{&quot;full&quot;:&quot;bl_3_2.png&quot;,&quot;sprite&quot;:&quot;rune0.png&quot;,&quot;group&quot;:&quot;rune&quot;,&quot;x&quot;:96,&quot;y&quot;:144,&quot;w&quot;:48,&quot;h&quot;:48},&quot;stats&quot;:{&quot;FlatMagicDamageMod&quot;:3.85},&quot;rune&quot;:{&quot;isRune&quot;:true,&quot;tier&quot;:&quot;2&quot;,&quot;type&quot;:&quot;black&quot;}},&quot;5234&quot;:{&quot;id&quot;:5234,&quot;name&quot;:&quot;Quintessence of Scaling Cooldown Reduction&quot;,&quot;description&quot;:&quot;-0.21% cooldowns per level  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property staticRuneData() As String
+            Get
+                Return ResourceManager.GetString("staticRuneData", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property wallpaper1() As System.Drawing.Bitmap
