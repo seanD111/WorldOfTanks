@@ -107,6 +107,7 @@ Partial Class SplashUI
         Me.rtbTOS.ForeColor = System.Drawing.Color.White
         Me.rtbTOS.Location = New System.Drawing.Point(35, 89)
         Me.rtbTOS.Name = "rtbTOS"
+        Me.rtbTOS.ReadOnly = True
         Me.rtbTOS.Size = New System.Drawing.Size(363, 357)
         Me.rtbTOS.TabIndex = 6
         Me.rtbTOS.Text = resources.GetString("rtbTOS.Text")
