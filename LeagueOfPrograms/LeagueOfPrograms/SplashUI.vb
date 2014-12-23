@@ -185,18 +185,14 @@ Public Class SplashUI
         Dim doc As HtmlDocument = web.Load("http://www.mobafire.com/league-of-legends/ahri-guide")
 
         ' Get all tables in the document
-        Dim tables As HtmlNodeCollection = doc.DocumentNode.SelectNodes("//table")
+        Dim tables As HtmlNode = doc.DocumentNode.SelectSingleNode("//*[contains(@class,'browse-table')]")
         ' Iterate all rows in the first table
-        Dim rows As HtmlNodeCollection = tables(0).SelectNodes(".//tr")
+        Dim rows As HtmlNodeCollection = tables.SelectNodes(".//tr")
         For i As Integer = 0 To rows.Count - 1
-
-            ' Iterate all columns in this row
-            Dim cols As HtmlNodeCollection = rows(i).SelectNodes(".//td")
+            Dim cols As HtmlNodeCollection = rows(i).SelectNodes(".//*[contains(@class,'pic')]")
             For j As Integer = 0 To cols.Count - 1
-
-                ' Get the value of the column and print it
-                Dim value As String = cols(j).InnerHtml
-                Debug.WriteLine(value)
+                Dim title As String = cols(j).SelectSingleNode(".//img").Attributes("title").Value
+                Debug.WriteLine(title)
             Next
         Next
 

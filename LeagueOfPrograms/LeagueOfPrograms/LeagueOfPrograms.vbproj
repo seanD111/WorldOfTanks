@@ -105,6 +105,8 @@
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Classes\aggStats.vb" />
     <Compile Include="Classes\API\dataFromAPI.vb" />
+    <Compile Include="Classes\Build.vb" />
+    <Compile Include="Classes\BuildList.vb" />
     <Compile Include="Classes\league.vb" />
     <Compile Include="Classes\leagueEntry.vb" />
     <Compile Include="MainUI.Designer.vb">

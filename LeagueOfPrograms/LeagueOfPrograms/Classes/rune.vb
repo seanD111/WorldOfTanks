@@ -1,4 +1,8 @@
-﻿Public Class Stats
+﻿' just add the price to the rune class,
+' and prgram them in manually,
+' then when you need to fetch a rune, have the deserializer open up the resource file i saved
+' and set the temporary rune = to the rune in the resource with the same id
+Public Class Stats
     Public Property FlatSpellBlockMod As Double
     Public Property PercentMPRegenMod As Double
     Public Property rFlatSpellBlockModPerLevel As Double
