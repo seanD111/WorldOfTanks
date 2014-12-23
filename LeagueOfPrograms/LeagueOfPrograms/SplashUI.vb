@@ -194,6 +194,19 @@ Public Class SplashUI
                 Dim title As String = cols(j).SelectSingleNode(".//img").Attributes("title").Value
                 Debug.WriteLine(title)
             Next
+            cols = rows(i).SelectNodes(".//*[contains(@class,'desc')]")
+            For j As Integer = 0 To cols.Count - 1
+                Dim items As HtmlNodeCollection = rows(i).SelectNodes(".//*[contains(@class,'build-items')]")
+                For k As Integer = 0 To items.Count - 1
+                    Dim name As HtmlNodeCollection = items(k).SelectNodes(".//img")
+                    For l As Integer = 0 To name.Count - 1
+                        Dim value As String = name.Item(l).Attributes("src").Value.Replace("/images/summoner-spell/", "").Replace(".png", "").Replace("/images/item/", "").Replace(".gif", "")
+                        Debug.WriteLine(value)
+                    Next
+
+
+                Next
+            Next
         Next
 
     End Sub
