@@ -12,28 +12,45 @@ Public Class dataFromAPI
         keys(2) = "a98f0029-9ce3-496e-b2ad-8f351ffe6678"
     End Sub
 
-    Public Function getBuildList()
+    Public Function getBuildList(ByVal champ As String)
         ' Load the html document
         Dim web As New HtmlWeb()
-        Dim doc As HtmlDocument = web.Load("http://www.mobafire.com/league-of-legends/ahri-guide")
-
-        Dim buildList As New BuildList
-
+        Dim doc As HtmlDocument = web.Load("http://www.mobafire.com/league-of-legends/" & champ & "-guide")
         ' Get all tables in the document
         Dim tables As HtmlNode = doc.DocumentNode.SelectSingleNode("//*[contains(@class,'browse-table')]")
         ' Iterate all rows in the first table
         Dim rows As HtmlNodeCollection = tables.SelectNodes(".//tr")
+
+        Dim buildList(rows.Count) As BuildList
+
         For i As Integer = 0 To rows.Count - 1
             Dim cols As HtmlNodeCollection = rows(i).SelectNodes(".//*[contains(@class,'pic')]")
+            Dim title As String = ""
             For j As Integer = 0 To cols.Count - 1
-                Dim title As String = cols(j).SelectSingleNode(".//img").Attributes("title").Value
-                buildList.pic = title
+                title = cols(j).SelectSingleNode(".//img").Attributes("title").Value
             Next
             cols = rows(i).SelectNodes(".//*[contains(@class,'desc')]")
             For j As Integer = 0 To cols.Count - 1
-                Dim desc As String = cols(j).InnerText
+                Dim items As HtmlNodeCollection = rows(i).SelectNodes(".//*[contains(@class,'build-items')]")
+                Dim a(1) As String
+                Dim b(5) As String
+                For k As Integer = 0 To items.Count - 1
+                    Dim name As HtmlNodeCollection = items(k).SelectNodes(".//img")
+                    For l As Integer = 0 To name.Count - 1
+                        If (name.Item(l).Attributes("src").Value.Contains(".png")) Then
+                            a(l) = name.Item(l).Attributes("src").Value.Replace("/images/summoner-spell/", "").Replace(".png", "")
+                            'Debug.Write(a(l) & " ")
+                        ElseIf (name.Item(l).Attributes("src").Value.Contains(".gif")) Then
+                            b(l) = name.Item(l).Attributes("src").Value.Replace("/images/item/", "").Replace(".gif", "")
+                            'Debug.Write(b(l) & " ")
+                        End If
+                    Next
+                    'Debug.WriteLine("")
+                Next
+                buildList(i) = New BuildList(title, a, b)
             Next
         Next
+        Return buildList
     End Function
 
     Public Function getSummoner(ByVal summonerName As String)

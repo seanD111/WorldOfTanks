@@ -180,35 +180,12 @@ Public Class SplashUI
     Private Sub imgOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles imgOK.Click
         imgLaunchButton.Enabled = True
         Panel1.Visible = False
-        ' Load the html document
-        Dim web As New HtmlWeb()
-        Dim doc As HtmlDocument = web.Load("http://www.mobafire.com/league-of-legends/ahri-guide")
 
-        ' Get all tables in the document
-        Dim tables As HtmlNode = doc.DocumentNode.SelectSingleNode("//*[contains(@class,'browse-table')]")
-        ' Iterate all rows in the first table
-        Dim rows As HtmlNodeCollection = tables.SelectNodes(".//tr")
-        For i As Integer = 0 To rows.Count - 1
-            Dim cols As HtmlNodeCollection = rows(i).SelectNodes(".//*[contains(@class,'pic')]")
-            For j As Integer = 0 To cols.Count - 1
-                Dim title As String = cols(j).SelectSingleNode(".//img").Attributes("title").Value
-                Debug.WriteLine(title)
-            Next
-            cols = rows(i).SelectNodes(".//*[contains(@class,'desc')]")
-            For j As Integer = 0 To cols.Count - 1
-                Dim items As HtmlNodeCollection = rows(i).SelectNodes(".//*[contains(@class,'build-items')]")
-                For k As Integer = 0 To items.Count - 1
-                    Dim name As HtmlNodeCollection = items(k).SelectNodes(".//img")
-                    For l As Integer = 0 To name.Count - 1
-                        Dim value As String = name.Item(l).Attributes("src").Value.Replace("/images/summoner-spell/", "").Replace(".png", "").Replace("/images/item/", "").Replace(".gif", "")
-                        Debug.WriteLine(value)
-                    Next
-
-
-                Next
-            Next
+        Dim data As New dataFromAPI
+        Dim buildlist() As BuildList = data.getBuildList("ahri")
+        For i As Integer = 0 To buildlist.Count - 2
+            Debug.WriteLine(buildlist(i).toString)
         Next
-
     End Sub
 
  
