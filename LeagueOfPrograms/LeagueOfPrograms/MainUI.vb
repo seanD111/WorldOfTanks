@@ -9,7 +9,7 @@ Public NotInheritable Class MainUI
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timerPing.Tick
         Dim pingSender As New Ping()
 
-        Dim reply As PingReply = pingSender.Send("50.203.115.149", 1000)
+        Dim reply As PingReply = pingSender.Send("66.151.33.45", 1000)
 
         lblping.Text = "Ping: " & reply.RoundtripTime
         If reply.RoundtripTime > 200 Then

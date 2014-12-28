@@ -39,15 +39,17 @@ Public Class dataFromAPI
                     For l As Integer = 0 To name.Count - 1
                         If (name.Item(l).Attributes("src").Value.Contains(".png")) Then
                             a(l) = name.Item(l).Attributes("src").Value.Replace("/images/summoner-spell/", "").Replace(".png", "")
-                            'Debug.Write(a(l) & " ")
                         ElseIf (name.Item(l).Attributes("src").Value.Contains(".gif")) Then
                             b(l) = name.Item(l).Attributes("src").Value.Replace("/images/item/", "").Replace(".gif", "")
-                            'Debug.Write(b(l) & " ")
                         End If
                     Next
-                    'Debug.WriteLine("")
                 Next
-                buildList(i) = New BuildList(title, a, b)
+                Dim info(3) As String
+                info(0) = cols(j).ChildNodes().Item(1).ChildNodes().Item(1).InnerText
+                info(1) = cols(j).ChildNodes().Item(1).ChildNodes().Item(3).ChildNodes.Item(1).InnerText
+                info(2) = cols(j).ChildNodes().Item(1).ChildNodes().Item(3).ChildNodes.Item(2).InnerText.Trim
+                info(3) = cols(j).SelectSingleNode(".//a[@href]").Attributes("href").Value
+                buildList(i) = New BuildList(title, a, b, info)
             Next
         Next
         Return buildList
