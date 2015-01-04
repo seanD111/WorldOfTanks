@@ -72,7 +72,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack">
-      <HintPath>C:\Users\KurtDesktop\Desktop\Net40\HtmlAgilityPack.dll</HintPath>
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net40\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json">
@@ -186,6 +186,63 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="league_of_legends_dock_icon_v2_by_kaldrax-d53pwe8.ico" />
+    <None Include="Resources\4362.png" />
+    <None Include="Resources\4353.png" />
+    <None Include="Resources\4352.png" />
+    <None Include="Resources\4344.png" />
+    <None Include="Resources\4343.png" />
+    <None Include="Resources\4342.png" />
+    <None Include="Resources\4341.png" />
+    <None Include="Resources\4334.png" />
+    <None Include="Resources\4333.png" />
+    <None Include="Resources\4332.png" />
+    <None Include="Resources\4331.png" />
+    <None Include="Resources\4324.png" />
+    <None Include="Resources\4323.png" />
+    <None Include="Resources\4322.png" />
+    <None Include="Resources\4314.png" />
+    <None Include="Resources\4313.png" />
+    <None Include="Resources\4312.png" />
+    <None Include="Resources\4311.png" />
+    <None Include="Resources\4262.png" />
+    <None Include="Resources\4253.png" />
+    <None Include="Resources\4252.png" />
+    <None Include="Resources\4251.png" />
+    <None Include="Resources\4244.png" />
+    <None Include="Resources\4243.png" />
+    <None Include="Resources\4242.png" />
+    <None Include="Resources\4241.png" />
+    <None Include="Resources\4234.png" />
+    <None Include="Resources\4233.png" />
+    <None Include="Resources\4232.png" />
+    <None Include="Resources\4231.png" />
+    <None Include="Resources\4224.png" />
+    <None Include="Resources\4222.png" />
+    <None Include="Resources\4221.png" />
+    <None Include="Resources\4214.png" />
+    <None Include="Resources\4213.png" />
+    <None Include="Resources\4212.png" />
+    <None Include="Resources\4211.png" />
+    <None Include="Resources\4162.png" />
+    <None Include="Resources\4154.png" />
+    <None Include="Resources\4152.png" />
+    <None Include="Resources\4151.png" />
+    <None Include="Resources\4144.png" />
+    <None Include="Resources\4143.png" />
+    <None Include="Resources\4142.png" />
+    <None Include="Resources\4141.png" />
+    <None Include="Resources\4134.png" />
+    <None Include="Resources\4133.png" />
+    <None Include="Resources\4132.png" />
+    <None Include="Resources\4131.png" />
+    <None Include="Resources\4124.png" />
+    <None Include="Resources\4123.png" />
+    <None Include="Resources\4122.png" />
+    <None Include="Resources\4121.png" />
+    <None Include="Resources\4114.png" />
+    <None Include="Resources\4113.png" />
+    <None Include="Resources\4112.png" />
+    <None Include="Resources\4111.png" />
     <None Include="Resources\staticMasteryData.txt" />
     <None Include="Resources\staticRuneData.txt" />
     <None Include="Resources\yellow_i7.png" />

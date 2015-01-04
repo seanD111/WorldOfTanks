@@ -92,7 +92,7 @@ Public Class rune
 
     Public Property description As String
     Public Property name As String
-    Public Property image As Image
+    Public Property image As Bitmap
 
     Public Property runeid As Integer
     Public Property inStore As Boolean

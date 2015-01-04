@@ -82,6 +82,23 @@ Public Class dataFromAPI
         ' stupid nested object in json
         Dim masteries As masteryPage() = JsonConvert.DeserializeObject(Of masteryPage())(JsonObject.Item(id).Item("pages").ToString())
         ' finally return the summoner object
+
+        json = My.Resources.staticMasteryData
+        JsonObject = JsonConvert.DeserializeObject(Of JObject)(json)
+        Try
+            For i As Integer = 0 To masteries.Length - 1
+                For j As Integer = 0 To masteries(i).masteries.Length - 1
+                    Dim tempMast As mastery
+                    masteries(i).masteries(j).img = CType(My.Resources.ResourceManager.GetObject("_" & masteries(i).masteries(j).id, My.Resources.Culture()), System.Drawing.Bitmap)
+                    tempMast = JsonConvert.DeserializeObject(Of mastery)(JsonObject.Item("data").Item(CStr(masteries(i).masteries(j).id)).ToString)
+                    masteries(i).masteries(j).description = tempMast.description
+                    masteries(i).masteries(j).name = tempMast.name
+
+                Next
+            Next
+        Catch
+        End Try
+
         Return masteries
     End Function
     Public Function getRunes(ByVal summonerID As String)
