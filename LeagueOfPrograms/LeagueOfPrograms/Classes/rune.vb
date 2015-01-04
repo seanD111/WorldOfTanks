@@ -82,7 +82,10 @@ Public Class Rune2
     Public Property tier As String
     Public Property type As String
 End Class
+Public Class Image
+    Public Property full As String
 
+End Class
 
 
 Public Class rune
@@ -92,8 +95,8 @@ Public Class rune
 
     Public Property description As String
     Public Property name As String
-    Public Property image As Bitmap
-
+    Public Property img As Bitmap
+    Public Property image As Image
     Public Property runeid As Integer
     Public Property inStore As Boolean
     Public Property id As Integer

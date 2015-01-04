@@ -115,6 +115,25 @@ Public Class dataFromAPI
 
         ' finally return the summoner object
 
+        json = My.Resources.staticRuneData
+        JsonObject = JsonConvert.DeserializeObject(Of JObject)(json)
+        Try
+            For i As Integer = 0 To runes.Length - 1
+                For j As Integer = 0 To runes(i).slots.Length - 1
+                    Dim tempRune As rune
+                    tempRune = JsonConvert.DeserializeObject(Of rune)(JsonObject.Item("data").Item(CStr(runes(i).slots(j).runeid)).ToString)
+                    runes(i).slots(j) = tempRune
+
+                    Dim MyChar() As Char = {"p", "n", "g", "."}
+
+                    runes(i).slots(j).img = CType(My.Resources.ResourceManager.GetObject("_" & tempRune.image.full.TrimEnd(MyChar), My.Resources.Culture()), System.Drawing.Bitmap)
+                    
+
+
+                Next
+            Next
+        Catch
+        End Try
 
 
         Return runes
